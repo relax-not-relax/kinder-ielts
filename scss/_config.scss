@@ -1,0 +1,44 @@
+$header-color: #099258;
+$paragraph-color: #717171;
+$nav-secondary-color: #FCD733;
+$primary-button-color: #78BC71;
+$secondary-button-color: #FFE85B;
+$primary-section-color: #EDE6D6;
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
