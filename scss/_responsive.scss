@@ -1,0 +1,111 @@
+@include media-sm {
+  .big-banner-container {
+    padding: 0 20px;
+  }
+  .big-banner {
+    height: 30vh;
+
+    .banner-header {
+      &-text {
+        font-size: 35px;
+      }
+
+      &-decor {
+        width: 43px;
+        bottom: 27px;
+        left: 185px;
+      }
+    }
+
+    .banner-sub-header {
+      width: 210px;
+      margin-bottom: 10px;
+
+      h2 {
+        font-size: 12px;
+      }
+    }
+
+    .banner-btn-detail {
+      width: 150px;
+      font-size: 12px;
+      padding: 10px 2px;
+      left: 0px;
+    }
+  }
+
+  .brand-logo {
+    width: 80px;
+  }
+
+  .navbar-toggler {
+    &-custom {
+      width: 42px;
+      height: 30px;
+    }
+
+    &-icon-custom {
+      width: 16px;
+      height: 16px;
+      margin-bottom: 7px;
+    }
+  }
+
+  .offcanvas-end.show {
+    
+    .offcanvas-body {
+
+        .navbar-nav-content {
+            padding-left: 0px !important;
+
+            .nav-item:nth-child(5) {
+                margin-bottom: 20px !important;
+            }
+
+            .nav-item-btn {
+                width: 200px !important;
+                margin-left: 1.5rem !important;
+            }
+        }
+    }
+  }
+
+  .sub-banner {
+    height: fit-content;
+
+    &-container {
+      padding: 0 20px;
+
+      h4 {
+        font-size: 15px !important;
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 25px !important;
+        width: 100%;
+      }
+
+      .card-group {
+        .card {
+          padding: 37px 27px;
+
+          img {
+            width: 30%;
+          }
+
+          &-body {
+            .card-title {
+              font-size: 18px;
+            }
+
+            .card-text {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,160 @@
+.big-banner {
+  background: url("../images/tutor-bnn.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+
+  &-container {
+    height: 100%;
+  }
+
+  .banner-header {
+    position: relative;
+
+    &-text {
+      position: relative;
+      font-size: 79px;
+      font-weight: 700;
+      color: #fff;
+      z-index: 2;
+      width: 100%;
+    }
+
+    &-decor {
+      width: 121px;
+      position: absolute;
+      z-index: 1;
+      bottom: 45px;
+      left: 405px;
+    }
+  }
+
+  .banner-sub-header {
+    padding: 10px;
+    gap: 10px;
+    background: rgba(237, 230, 214, 0.33);
+    width: 450px;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: $secondary-button-color;
+      line-height: normal;
+      margin-bottom: 0;
+    }
+  }
+
+  .banner-btn-detail {
+    position: relative;
+    padding: 14px 38px;
+    width: 240px;
+    border-radius: 100vw;
+    background-color: transparent;
+    color: $secondary-button-color;
+    font-size: 20px;
+    font-weight: 600;
+    border: solid 2px $secondary-button-color;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); // easeOutQuart
+    left: 100px;
+
+    &-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .fill-container {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      padding-bottom: 100%;
+      transform: translateY(-50%) rotate(180deg);
+
+      // collor filling
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $secondary-button-color;
+        border-radius: 50%;
+        transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); // easeOutQuart
+        transform: translateY(-100%);
+      }
+    }
+
+    &:hover {
+      border-color: $secondary-button-color;
+      transform: translateY(-4px);
+      color: #fff;
+
+      .fill-container {
+        transform: translateY(-50%) rotate(0);
+
+        &::after {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+.sub-banner {
+  width: 100%;
+  height: 626px;
+  background: #f8f8f8;
+
+  &-container {
+    height: 100%;
+
+    h4 {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      color: $header-color;
+    }
+
+    h2 {
+      color: #000;
+      font-size: 45px;
+      font-weight: 800;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-bottom: 50px;
+    }
+
+    .card-group {
+      width: 100%;
+      .card {
+        border-radius: 12px !important;
+        border: 0px;
+        padding: 47px 27px;
+        @include transition-ease;
+
+        &:hover {
+            box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.13);
+        }
+
+        &-body {
+          padding: 2rem 0 0 0;
+
+          .card-title {
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+          }
+
+          .card-text {
+            color: $paragraph-color;
+          }
+        }
+      }
+    }
+  }
+}
