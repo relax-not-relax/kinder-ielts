@@ -36,7 +36,6 @@ export function renderSubBannerList(elementId, subBannerList) {
     divElement.textContent = '';
     
     subBannerList.forEach((subBanner) => {
-        console.log(subBanner);
         const card = createSubBannerElement(subBanner);
         divElement.appendChild(card);
     })
