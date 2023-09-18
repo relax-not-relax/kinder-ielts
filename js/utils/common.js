@@ -15,5 +15,6 @@ export function setBackgroundImage(parent, selector, imageUrl) {
     if (!parent) return;
 
     const element = parent.querySelector(selector);
-    if (element) element.src = `./images/${imageUrl}`;
+    // if (element) element.src = `./images/${imageUrl}`;
+    if (element) element.src = imageUrl;
 }
