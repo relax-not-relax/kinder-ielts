@@ -52,21 +52,19 @@
   }
 
   .offcanvas-end.show {
-    
     .offcanvas-body {
+      .navbar-nav-content {
+        padding-left: 0px !important;
 
-        .navbar-nav-content {
-            padding-left: 0px !important;
-
-            .nav-item:nth-child(5) {
-                margin-bottom: 20px !important;
-            }
-
-            .nav-item-btn {
-                width: 200px !important;
-                margin-left: 1.5rem !important;
-            }
+        .nav-item:nth-child(5) {
+          margin-bottom: 20px !important;
         }
+
+        .nav-item-btn {
+          width: 200px !important;
+          margin-left: 1.5rem !important;
+        }
+      }
     }
   }
 
@@ -91,7 +89,7 @@
           padding: 37px 27px;
 
           img {
-            width: 30%;
+            width: 20%;
           }
 
           &-body {
@@ -110,6 +108,66 @@
 
   .our-tutors {
     height: fit-content;
-  }
+    padding: 30px 0;
 
+    &-container {
+      
+      padding: 0 25px;
+
+      &-header {
+        width: 100%;
+
+        h1 {
+          font-size: 25px !important;
+        }
+
+        .read-more {
+          font-size: 15px !important;
+        }
+      }
+
+      .tutor-container {
+        height: fit-content;
+        padding: 10px 0;
+        gap: 50px 20px;
+
+        .tutor-card {
+          width: 300px !important;
+          height: 300px !important;
+          
+
+          &-img {
+            width: 270px;
+            height: 175px;
+            top: 15px;
+
+            img {
+              border-radius: 10px;
+            }
+          }
+
+          &-content {
+            top: 220px;
+
+            &-header {
+
+              h3 {
+                font-size: 18px;
+              }
+
+              .ielts-band {
+                font-size: 15px;
+              }
+
+              .exp-tutor {
+                font-size: 13px;
+              }
+
+            }
+
+          }
+        }
+      }
+    }
+  }
 }
