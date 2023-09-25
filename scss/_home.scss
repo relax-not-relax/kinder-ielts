@@ -107,7 +107,7 @@
 .sub-banner {
   width: 100%;
   height: 626px;
-  background: #f8f8f8;
+  background: #fffced;
   overflow: hidden;
 
   &-container {
@@ -173,8 +173,6 @@
     height: 100%;
 
     &-header {
-      
-
       h1 {
         font-size: 54px;
         font-style: normal;
@@ -183,20 +181,19 @@
         text-transform: capitalize;
         color: $header-color;
       }
-  
+
       .read-more {
         text-decoration: none;
         font-size: 20px;
         display: inline-block;
         color: $primary-button-color;
         transition: 0.2s;
-  
+
         &:hover {
           font-weight: 500;
           color: $header-color;
         }
       }
-      
     }
 
     .tutor-container {
@@ -307,6 +304,258 @@
       .tutor-card:hover .tutor-card-content {
         height: 300px;
         top: 160px;
+      }
+    }
+  }
+}
+
+.test-ielts {
+  width: 100%;
+  height: 1000px;
+  background: #fffced;
+
+  &-container {
+    height: 100%;
+
+    &-1 {
+      h1 {
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: $header-color;
+      }
+
+      p {
+        font-size: 20px;
+        width: 80%;
+        color: $paragraph-color;
+      }
+
+      img {
+        width: 432px;
+        height: 433px;
+      }
+    }
+
+    &-2 {
+      position: relative;
+      padding-left: 150px;
+
+      img {
+        position: absolute;
+        bottom: 350px;
+        right: 50px;
+        width: 480px;
+        height: 480px;
+      }
+
+      p {
+        position: absolute;
+        font-size: 20px;
+        width: 70%;
+        color: $paragraph-color;
+        bottom: 210px;
+      }
+
+      .test-link {
+        position: inherit;
+        bottom: 130px;
+        width: 428px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 600;
+        border: 2px solid $primary-button-color;
+        border-radius: 30px;
+        @include transition-ease;
+
+        a {
+          color: $primary-button-color;
+          text-decoration: none;
+        }
+
+        &:hover {
+          background: $primary-button-color;
+          cursor: pointer;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+
+      .test-link-1 {
+        position: inherit;
+        bottom: 60px;
+        width: 428px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 600;
+        border: 2px solid $primary-button-color;
+        background: $primary-button-color;
+        border-radius: 30px;
+        @include transition-ease;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &:hover {
+          background: transparent;
+          cursor: pointer;
+
+          a {
+            color: $primary-button-color;
+          }
+        }
+      }
+
+      .test-div {
+        position: absolute;
+        bottom: 5px;
+        right: 280px;
+      }
+    }
+  }
+}
+
+.courses {
+  width: 100%;
+  height: 1000px;
+  background: $primary-section-color;
+  position: relative;
+
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23%;
+    z-index: 1;
+  }
+
+  &-container {
+    height: 100%;
+    z-index: 3;
+    padding: 0 35px;
+
+    h1 {
+      color: $header-color;
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    h4 {
+      color: $primary-button-color;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-bottom: 120px;
+    }
+
+    a {
+      width: 100%;
+      margin: 80px 500px 0 500px;
+      height: 46px;
+      background: $primary-button-color;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      @include transition-ease;
+
+      &:hover {
+        margin: 80px 490px 0 490px;
+      }
+    }
+
+    .course-wrapper {
+      width: 100%;
+      height: 370px;
+      max-width: 1320px;
+      position: relative;
+
+      i {
+        height: 50px;
+        width: 50px;
+        background: #fff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        font-size: 1.25rem;
+        transform: translateY(-50%);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+        z-index: 10;
+        color: $primary-button-color;
+        font-weight: 600;
+
+        &:first-child {
+          left: -22px;
+        }
+
+        &:last-child {
+          right: -22px;
+        }
+      }
+
+      .carousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 10px);
+        padding-left: 0;
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: 0;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        &.dragging {
+          scroll-snap-type: none;
+          scroll-behavior: auto;
+
+          .course {
+            cursor: grab;
+            user-select: none;
+          }
+        }
+
+        &.no-transition {
+          scroll-behavior: auto;
+        }
+
+        .course {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          scroll-snap-align: start;
+
+          &-img {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+
+            img {
+              width: 370px;
+              height: 370px;
+              object-fit: cover;
+            }
+          }
+        }
       }
     }
   }
