@@ -1,4 +1,5 @@
 import { renderSubBannerList } from "./utils";
+import { dragableCarousel } from "./utils/carousel";
 
 
 (() => {
@@ -23,4 +24,5 @@ import { renderSubBannerList } from "./utils";
     ];
 
     renderSubBannerList('subBannerList', subBannerList);
+    dragableCarousel();
 })();

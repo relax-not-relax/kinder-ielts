@@ -20,13 +20,17 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Kinder IELTS</title>
   </head>
   <body>
     <!-- Template for sub-banner -->
     <template id="subBannerTemplate">
-      <div class="card ms-3 me-3 col-md-12">
+      <div class="card ms-3 me-3 col-md-12" style="background: #fff8d0">
         <img
           data-id="thumbnail"
           src="./images/sb-icon-1.png"
@@ -196,11 +200,14 @@
         <div
           class="container our-tutors-container d-flex flex-wrap align-content-center"
         >
-          <div class="our-tutors-container-header col-md-12 d-flex justify-content-between">
+          <div
+            class="our-tutors-container-header col-md-12 d-flex justify-content-between"
+          >
             <h1 class="">our tutors</h1>
-            <a href="" class="read-more d-flex align-items-center">Tìm hiểu thêm <i class="uil uil-angle-right"></i></a>
+            <a href="" class="read-more d-flex align-items-center"
+              >Tìm hiểu thêm <i class="uil uil-angle-right"></i
+            ></a>
           </div>
-          
 
           <div class="tutor-container col-md-12">
             <div class="tutor-card">
@@ -318,6 +325,103 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Test -->
+      <section class="col-md-12 test-ielts">
+        <div
+          class="container test-ielts-container d-flex flex-wrap align-content-center"
+        >
+          <div class="col-md-6 col-sm-12 test-ielts-container-1 pe-4">
+            <h1>Kiểm tra trình độ của bạn miễn phí</h1>
+            <p class="pt-5 pb-5">
+              Kinder sẽ chấm và gửi kết quả cho bạn qua email sau 24h làm việc
+            </p>
+
+            <img src="./images/test-1.png" alt="" />
+          </div>
+
+          <div class="col-md-6 col-sm-12 test-ielts-container-2">
+            <img src="./images/test-2.png" alt="" />
+
+            <p>
+              Mục tiêu của bài kiểm tra nhằm đánh giá khả năng của bạn thông qua
+              các tiêu chí khác nhau
+            </p>
+
+            <div
+              class="test-div d-flex flex-wrap align-content-center justify-content-center"
+            >
+              <div
+                class="test-link d-flex flex-wrap align-content-center justify-content-center"
+              >
+                <a href="">Test khả năng tiếng Anh</a>
+              </div>
+
+              <div
+                class="test-link-1 d-flex flex-wrap align-content-center justify-content-center"
+              >
+                <a href="">Test khả năng Tiếng Anh và IELTS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-md-12 courses">
+        <img class="courses-img" src="./images/decor-3.png" alt="" />
+
+        <div
+          class="container courses-container d-flex flex-wrap align-content-center"
+        >
+          <h1 class="col-md-12 d-flex justify-content-center">
+            Các khóa học nổi bật
+          </h1>
+          <h4 class="col-md-12 d-flex justify-content-center">
+            tại Kinder IELTS
+          </h4>
+
+          <div class="course-wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+              <li class="course">
+                <div class="course-img">
+                  <img src="./images/course-1.png" draggable="false" />
+                </div>
+              </li>
+              <li class="course">
+                <div class="course-img">
+                  <img src="./images/course-2.png" draggable="false" />
+                </div>
+              </li>
+              <li class="course">
+                <div class="course-img">
+                  <img src="./images/course-3.png" draggable="false" />
+                </div>
+              </li>
+              <li class="course">
+                <div class="course-img">
+                  <img src="./images/course-1.png" draggable="false" />
+                </div>
+              </li>
+              <li class="course">
+                <div class="course-img">
+                  <img src="./images/course-2.png" draggable="false" />
+                </div>
+              </li>
+              <li class="course">
+                <div class="course-img">
+                  <img src="./images/course-3.png" draggable="false" />
+                </div>
+              </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+
+          <a class="d-flex justify-content-center align-items-center" href=""
+            >Xem tất cả</a
+          >
         </div>
       </section>
     </main>
