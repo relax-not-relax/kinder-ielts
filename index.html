@@ -452,33 +452,42 @@
                   type="text"
                   class="form-control"
                   placeholder="Họ tên của bạn"
-                  name="Name"
+                  name="Họ tên"
                 />
               </div>
               <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email" name="Email"/>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  name="Email"
+                />
               </div>
               <div class="mb-3">
                 <input
                   type="tel"
                   class="form-control"
                   placeholder="Số điện thoại"
-                  name="Phone"
+                  name="Số điện thoại"
                 />
               </div>
               <div class="mb-3">
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
                   placeholder="Năm sinh"
-                  name="YOB"
+                  name="Năm sinh"
                 />
               </div>
               <div class="mb-3">
                 <label for="inputPoint" class="form-label"
                   >Mức điểm hiện tại</label
                 >
-                <select id="inputPoint" class="form-select">
+                <select
+                  id="inputPoint"
+                  class="form-select"
+                  name="Mức điểm hiện tại"
+                >
                   <option selected value="Chưa xác định">Chưa xác định</option>
                   <option value="Có nền Tiếng Anh">Có nền Tiếng Anh</option>
                   <option value="Có biết IELTS nhưng chưa tìm hiểu được nhiều">
@@ -495,33 +504,52 @@
                 <label for="inputPointExpect" class="form-label"
                   >Mức điểm bạn muốn đạt</label
                 >
-                <select id="inputPointExpect" class="form-select">
+                <select
+                  id="inputPointExpect"
+                  class="form-select"
+                  name="Mức điểm muốn đạt"
+                >
                   <option selected value="5.0">5.0</option>
                   <option value="6.0">6.0</option>
                   <option value="7.0">7.0</option>
                   <option value="8.0">8.0</option>
                 </select>
               </div>
+
               <div class="mb-3">
                 <label for="inputCourse" class="form-label"
                   >Khóa học bạn quan tâm</label
                 >
-                <select id="inputCourse" class="form-select">
+                <select
+                  id="inputCourse"
+                  class="form-select"
+                  name="Khóa học bạn quan tâm"
+                >
+                  <option value="Hạt giống">Hạt giống</option>
                   <option selected value="Mầm">Mầm</option>
                   <option value="Chồi">Chồi</option>
                   <option value="Lá">Lá</option>
                   <option value="1-1">1-1</option>
                   <option value="1-2">1-2</option>
-                  <option value="Hạt giống">Hạt giống</option>
-                  <option value="Bón">Bón</option>
+                  <option value="Lá + Bón">Lá + Bón</option>
+                  <option value="Combo (liên hệ thêm)">
+                    Combo (liên hệ thêm)
+                  </option>
                 </select>
               </div>
+
               <div class="mb-3">
                 <label for="exam" class="form-label"
                   >Thời gian thi dự kiến</label
                 >
-                <input id="exam" type="date" class="form-control" />
+                <input
+                  id="exam"
+                  type="date"
+                  class="form-control"
+                  name="Thời gian thi dự kiến"
+                />
               </div>
+
               <div class="mb-3">
                 <label for="coupon" class="form-label"
                   >Điền mã giảm giá (nếu có)</label
@@ -530,17 +558,24 @@
                   id="coupon"
                   type="text"
                   class="form-control"
-                  placeholder="EWn..."
+                  placeholder="KINDER5"
+                  name="Mã giảm giá"
                 />
               </div>
               <div class="mb-3">
                 <label for="inputTime" class="form-label"
                   >Khoảng thời gian phù hợp để Kinder tư vấn cho bạn</label
                 >
-                <select id="inputTime" class="form-select">
+                <select
+                  id="inputTime"
+                  class="form-select"
+                  name="Thời gian tư vấn"
+                >
                   <option selected value="9h-12h">9:00 - 12:00</option>
                   <option value="14h-17h">14:00 - 17:00</option>
                   <option value="17h-18h">17:00 - 18:00</option>
+                  <option value="19h-21h">19:00 - 21:00</option>
+                  <option value="Sau 21h">Sau 21:00</option>
                 </select>
               </div>
               <div class="d-grid gap-2 col-6 mx-auto">
