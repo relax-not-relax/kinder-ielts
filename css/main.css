@@ -647,6 +647,10 @@
   }
   .test-ielts-container-1 {
     padding-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .test-ielts-container-1 h1 {
     font-size: 25px !important;
@@ -658,8 +662,8 @@
     padding-bottom: 0 !important;
   }
   .test-ielts-container-1 img {
-    width: 315px !important;
-    height: 316px !important;
+    width: 260px !important;
+    height: 261px !important;
   }
   .test-ielts-container-2 {
     position: relative;
@@ -715,7 +719,7 @@
     margin-bottom: 20px;
   }
   .courses-container a {
-    margin: 50px 20px 0 20px !important;
+    margin: 50px 30px 0 30px !important;
     font-size: 15px;
   }
   .courses-container .course-wrapper {
