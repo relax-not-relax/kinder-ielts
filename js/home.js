@@ -1,5 +1,6 @@
 import { renderSubBannerList } from "./utils";
 import { dragableCarousel } from "./utils/carousel";
+import { formSubmit } from "./utils/form";
 
 
 (() => {
@@ -25,4 +26,5 @@ import { dragableCarousel } from "./utils/carousel";
 
     renderSubBannerList('subBannerList', subBannerList);
     dragableCarousel();
+    formSubmit();
 })();
