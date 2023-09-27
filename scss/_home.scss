@@ -1,5 +1,5 @@
 .big-banner {
-  background: url("../images/tutor-bnn.png") no-repeat;
+  background: url("../images/tutor-bnn-1.png") no-repeat;
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -593,7 +593,7 @@
       p {
         color: $paragraph-color;
       }
-      
+
       label {
         font-weight: 600;
       }
@@ -636,9 +636,7 @@
   background: #111;
   z-index: 9999;
   @include transition-ease;
-
 }
-
 
 .fade-out-anim {
   opacity: 0;
@@ -646,8 +644,8 @@
 }
 
 .custom-modal {
-  padding-top: 50px; 
-  padding-bottom: 50px; 
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 
   &-img {
@@ -663,6 +661,121 @@
     margin-top: 15px;
     color: $paragraph-color;
   }
+}
 
-  
+footer {
+  width: 100%;
+  height: 570px;
+  background: #111;
+
+  .footer-container {
+    height: 100%;
+
+    &-1 {
+      img {
+        width: 301px;
+        height: 129px;
+      }
+
+      .kinder-info {
+        h5 {
+          color: #727272;
+        }
+
+        ul {
+          padding-left: 0 !important;
+
+          .d-flex {
+            gap: 10px !important;
+          }
+        }
+
+        li {
+          list-style: none;
+          color: #fff;
+
+          a {
+            text-decoration: none;
+            font-size: 17px !important;
+            color: #fff;
+            @include transition-ease;
+
+            &:hover {
+              color: $nav-secondary-color;
+            }
+          }
+          i {
+            color: #fff;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .kinder-social {
+        h5 {
+          color: #727272;
+        }
+
+        ul {
+          display: flex;
+          padding-left: 0px !important;
+          gap: 15px;
+
+          li {
+            list-style: none;
+            color: #fff;
+
+            a {
+              font-size: 30px;
+              color: #fff;
+              @include transition-ease;
+
+              &:hover {
+                color: $primary-button-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-2 {
+      .kinder-course {
+        h5 {
+          color: #727272;
+        }
+
+        ul {
+          padding-left: 0 !important;
+
+          li {
+            list-style: none;
+            color: #fff;
+            margin-bottom: 10px;
+
+            a {
+              text-decoration: none;
+              font-size: 17px !important;
+              color: #fff;
+              @include transition-ease;
+
+              &:hover {
+                color: $nav-secondary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .kinder-copyright {
+    height: 50px;
+    background: #111;
+    border-top: 2px solid #1B1B1B;
+
+    span {
+      color: #727272;
+    }
+  }
 }

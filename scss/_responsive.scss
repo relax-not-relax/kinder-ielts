@@ -362,8 +362,92 @@
     }
 
     p {
-      font-size: 15px !important;
+      font-size: 13px !important;
       margin-top: 10px;
+    }
+  }
+
+  footer {
+    height: 600px;
+
+    .footer-container {
+      padding: 0 25px !important;
+
+      &-1 {
+        img {
+          width: 147px;
+          height: 63px;
+        }
+
+        .kinder-info {
+          margin-top: 15px !important;
+
+          h5 {
+            font-size: 15px !important;
+            padding-bottom: 5px !important;
+          }
+
+          ul {
+            .d-flex {
+              gap: 5px !important;
+            }
+          }
+
+          li {
+            a {
+              font-size: 13px !important;
+            }
+          }
+        }
+
+        .kinder-social {
+          margin-top: 20px !important;
+
+          h5 {
+            font-size: 15px !important;
+            padding-bottom: 5px !important;
+          }
+
+          ul {
+            gap: 10px !important;
+
+            li {
+              a {
+                font-size: 20px !important;
+              }
+            }
+          }
+        }
+      }
+
+      &-2 {
+        padding-left: 0 !important;
+        width: 276.56px;
+        
+        .kinder-course {
+          margin-top: 10px !important;
+          h5 {
+            font-size: 15px !important;
+            padding-bottom: 5px !important;
+          }
+
+          ul {
+            gap: 10px !important;
+
+            li {
+              a {
+                font-size: 13px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .kinder-copyright {
+      span {
+        font-size: 12px !important;
+      }
     }
   }
 }

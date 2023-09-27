@@ -9,7 +9,7 @@
 }
 
 .big-banner {
-  background: url("../images/tutor-bnn.png") no-repeat;
+  background: url("../images/tutor-bnn-1.png") no-repeat;
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -584,6 +584,93 @@
   color: #717171;
 }
 
+footer {
+  width: 100%;
+  height: 570px;
+  background: #111;
+}
+footer .footer-container {
+  height: 100%;
+}
+footer .footer-container-1 img {
+  width: 301px;
+  height: 129px;
+}
+footer .footer-container-1 .kinder-info h5 {
+  color: #727272;
+}
+footer .footer-container-1 .kinder-info ul {
+  padding-left: 0 !important;
+}
+footer .footer-container-1 .kinder-info ul .d-flex {
+  gap: 10px !important;
+}
+footer .footer-container-1 .kinder-info li {
+  list-style: none;
+  color: #fff;
+}
+footer .footer-container-1 .kinder-info li a {
+  text-decoration: none;
+  font-size: 17px !important;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+footer .footer-container-1 .kinder-info li a:hover {
+  color: #FCD733;
+}
+footer .footer-container-1 .kinder-info li i {
+  color: #fff;
+  margin-right: 5px;
+}
+footer .footer-container-1 .kinder-social h5 {
+  color: #727272;
+}
+footer .footer-container-1 .kinder-social ul {
+  display: flex;
+  padding-left: 0px !important;
+  gap: 15px;
+}
+footer .footer-container-1 .kinder-social ul li {
+  list-style: none;
+  color: #fff;
+}
+footer .footer-container-1 .kinder-social ul li a {
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+footer .footer-container-1 .kinder-social ul li a:hover {
+  color: #78BC71;
+}
+footer .footer-container-2 .kinder-course h5 {
+  color: #727272;
+}
+footer .footer-container-2 .kinder-course ul {
+  padding-left: 0 !important;
+}
+footer .footer-container-2 .kinder-course ul li {
+  list-style: none;
+  color: #fff;
+  margin-bottom: 10px;
+}
+footer .footer-container-2 .kinder-course ul li a {
+  text-decoration: none;
+  font-size: 17px !important;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+footer .footer-container-2 .kinder-course ul li a:hover {
+  color: #FCD733;
+}
+footer .kinder-copyright {
+  height: 50px;
+  background: #111;
+  border-top: 2px solid #1B1B1B;
+}
+footer .kinder-copyright span {
+  color: #727272;
+}
+
 .navbar .nav-link-content {
   font-weight: 600;
   font-size: 18px;
@@ -874,8 +961,64 @@
     font-size: 20px !important;
   }
   .custom-modal p {
-    font-size: 15px !important;
+    font-size: 13px !important;
     margin-top: 10px;
+  }
+  footer {
+    height: 600px;
+  }
+  footer .footer-container {
+    padding: 0 25px !important;
+  }
+  footer .footer-container-1 img {
+    width: 147px;
+    height: 63px;
+  }
+  footer .footer-container-1 .kinder-info {
+    margin-top: 15px !important;
+  }
+  footer .footer-container-1 .kinder-info h5 {
+    font-size: 15px !important;
+    padding-bottom: 5px !important;
+  }
+  footer .footer-container-1 .kinder-info ul .d-flex {
+    gap: 5px !important;
+  }
+  footer .footer-container-1 .kinder-info li a {
+    font-size: 13px !important;
+  }
+  footer .footer-container-1 .kinder-social {
+    margin-top: 20px !important;
+  }
+  footer .footer-container-1 .kinder-social h5 {
+    font-size: 15px !important;
+    padding-bottom: 5px !important;
+  }
+  footer .footer-container-1 .kinder-social ul {
+    gap: 10px !important;
+  }
+  footer .footer-container-1 .kinder-social ul li a {
+    font-size: 20px !important;
+  }
+  footer .footer-container-2 {
+    padding-left: 0 !important;
+    width: 276.56px;
+  }
+  footer .footer-container-2 .kinder-course {
+    margin-top: 10px !important;
+  }
+  footer .footer-container-2 .kinder-course h5 {
+    font-size: 15px !important;
+    padding-bottom: 5px !important;
+  }
+  footer .footer-container-2 .kinder-course ul {
+    gap: 10px !important;
+  }
+  footer .footer-container-2 .kinder-course ul li a {
+    font-size: 13px !important;
+  }
+  footer .kinder-copyright span {
+    font-size: 12px !important;
   }
 }
 body {
