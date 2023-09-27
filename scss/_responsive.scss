@@ -299,4 +299,71 @@
       }
     }
   }
+
+  .info-form {
+
+    background: none;
+
+    img {
+      display: none !important;
+      
+    }
+
+    &-container {
+
+      padding: 0 25px !important;
+
+      .kinder-form {
+        position: inherit;
+        padding: 20px;
+
+        h4 {
+          font-size: 20px !important;
+        }
+
+        p {
+          font-size: 13px !important;
+        }
+
+        label {
+          font-size: 13px !important;
+        }
+
+        .btn {
+          font-size: 15px !important;
+          padding: 7px 0;
+        }
+
+        input {
+          font-size: 13px !important;
+        }
+
+        select {
+          font-size: 13px !important;
+        }
+      }
+    }
+
+  }
+
+  .custom-modal {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &-img {
+      img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    h3 {
+      font-size: 20px !important;
+    }
+
+    p {
+      font-size: 15px !important;
+      margin-top: 10px;
+    }
+  }
 }

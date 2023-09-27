@@ -1,13 +1,32 @@
 export function formSubmit() {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzdRZe36yzlLdJzlJGwnTSpOKzepkTtWit19XU-EM1-YqpgGl5233D7zvfjM1zTimqFAw/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwscZ0n1WH5BWffVw-8HSF9KKeWVXAfWnpCmXoIWR4_5YDYXT0j9cuvF0szKiEbhvd8ZA/exec'
 
     const form = document.forms['contact-form']
+    var thankYouModal = new bootstrap.Modal(document.getElementById("myModal"));
+    const preloaderWrapper = document.getElementById('load-wrapper');
 
     form.addEventListener('submit', e => {
-        e.preventDefault()
+        e.preventDefault();
+        // preloaderWrapper.classList.add('fade-out-anim');
+        preloaderWrapper.style.display = "flex";
+        preloaderWrapper.style.alignItems = "center";
+        preloaderWrapper.style.justifyContent = "center";
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => alert("Thank you! your form is submitted successfully."))
-            .then(() => { window.location.reload(); })
+            .then(response => {
+                if (response.ok) {
+                    // Show the thank you modal
+                    
+                    preloaderWrapper.classList.add('fade-out-anim');
+
+                    thankYouModal.show();
+                    // Reload the page after a delay (e.g., 2 seconds)
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 3700); 
+                } else {
+                    console.error('Form submission failed.');
+                }
+            })
             .catch(error => console.error('Error!', error.message))
     })
 }
