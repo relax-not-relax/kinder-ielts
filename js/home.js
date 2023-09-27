@@ -1,6 +1,7 @@
 import { renderSubBannerList } from "./utils";
 import { dragableCarousel } from "./utils/carousel";
 import { formSubmit } from "./utils/form";
+import { scrollToSection } from "./utils/scroll";
 
 
 (() => {
@@ -27,4 +28,5 @@ import { formSubmit } from "./utils/form";
     renderSubBannerList('subBannerList', subBannerList);
     dragableCarousel();
     formSubmit();
+    scrollToSection();
 })();
