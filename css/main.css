@@ -536,10 +536,52 @@
   font-size: 18px;
   margin-top: 15px;
 }
+.info-form-container .kinder-form .btn:hover {
+  border: 1px solid #78BC71;
+  color: #78BC71;
+  background: #fffced;
+}
 .info-form-container img {
   position: absolute;
   bottom: 0;
   right: 12%;
+}
+
+.wrapper-hidden {
+  display: none;
+}
+
+#load-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  z-index: 9999;
+  transition: all 0.5s ease-in-out;
+}
+
+.fade-out-anim {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.custom-modal {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.custom-modal-img {
+  width: 100%;
+}
+.custom-modal-img img {
+  width: 200px;
+  height: 200px;
+}
+.custom-modal p {
+  margin-top: 15px;
+  color: #717171;
 }
 
 .navbar .nav-link-content {
@@ -787,6 +829,53 @@
   .courses-container .course-wrapper .carousel .course-img img {
     width: 300px;
     height: 300px;
+  }
+  .info-form {
+    background: none;
+  }
+  .info-form img {
+    display: none !important;
+  }
+  .info-form-container {
+    padding: 0 25px !important;
+  }
+  .info-form-container .kinder-form {
+    position: inherit;
+    padding: 20px;
+  }
+  .info-form-container .kinder-form h4 {
+    font-size: 20px !important;
+  }
+  .info-form-container .kinder-form p {
+    font-size: 13px !important;
+  }
+  .info-form-container .kinder-form label {
+    font-size: 13px !important;
+  }
+  .info-form-container .kinder-form .btn {
+    font-size: 15px !important;
+    padding: 7px 0;
+  }
+  .info-form-container .kinder-form input {
+    font-size: 13px !important;
+  }
+  .info-form-container .kinder-form select {
+    font-size: 13px !important;
+  }
+  .custom-modal {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .custom-modal-img img {
+    width: 130px;
+    height: 130px;
+  }
+  .custom-modal h3 {
+    font-size: 20px !important;
+  }
+  .custom-modal p {
+    font-size: 15px !important;
+    margin-top: 10px;
   }
 }
 body {

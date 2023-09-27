@@ -28,6 +28,13 @@
     <title>Kinder IELTS</title>
   </head>
   <body>
+
+    <div id="load-wrapper" style="display: none;">
+      <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    
     <!-- Template for sub-banner -->
     <template id="subBannerTemplate">
       <div class="card ms-3 me-3 col-md-12" style="background: #fff8d0">
@@ -436,7 +443,7 @@
           <div class="kinder-form d-flex flex-wrap align-content-center">
             <form
               method="post"
-              action="https://script.google.com/macros/s/AKfycbzdRZe36yzlLdJzlJGwnTSpOKzepkTtWit19XU-EM1-YqpgGl5233D7zvfjM1zTimqFAw/exec"
+              action="https://script.google.com/macros/s/AKfycbwscZ0n1WH5BWffVw-8HSF9KKeWVXAfWnpCmXoIWR4_5YDYXT0j9cuvF0szKiEbhvd8ZA/exec"
               name="contact-form"
             >
               <h4>Đăng ký nhận tư vấn tại Kinder IELTS</h4>
@@ -586,6 +593,25 @@
         </div>
       </section>
     </main>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+    
+          <div class="custom-modal-img d-flex justify-content-center align-content-center">
+            <img src="./images/check.png" alt="">
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h3>Thank you!</h3>
+            <p>Bạn đã đăng ký thành công, vui lòng đợi tư vấn từ Kinder IELTS</p>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
 
     <!-- Bootstrap script -->
     <script
