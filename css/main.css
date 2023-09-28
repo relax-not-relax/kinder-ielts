@@ -795,6 +795,9 @@ footer .kinder-copyright span {
     width: 300px !important;
     height: 300px !important;
   }
+  .our-tutors-container .tutor-container .tutor-card:hover {
+    height: 360px !important;
+  }
   .our-tutors-container .tutor-container .tutor-card-img {
     width: 270px;
     height: 175px;
@@ -814,6 +817,15 @@ footer .kinder-copyright span {
   }
   .our-tutors-container .tutor-container .tutor-card-content-header .exp-tutor {
     font-size: 13px;
+  }
+  .our-tutors-container .tutor-container .tutor-card:hover .tutor-card-img {
+    top: -60px;
+  }
+  .our-tutors-container .tutor-container .tutor-card:hover .tutor-card-content {
+    top: 108px !important;
+  }
+  .our-tutors-container .tutor-container .tutor-card:hover .tutor-card-content-detail {
+    font-size: 13px !important;
   }
   .test-ielts {
     padding: 30px 0;

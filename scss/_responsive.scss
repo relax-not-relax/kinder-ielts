@@ -134,6 +134,10 @@
           width: 300px !important;
           height: 300px !important;
 
+          &:hover {
+            height: 360px !important;
+          }
+
           &-img {
             width: 270px;
             height: 175px;
@@ -160,6 +164,18 @@
                 font-size: 13px;
               }
             }
+          }
+        }
+
+        .tutor-card:hover .tutor-card-img {
+          top: -60px;
+        }
+
+        .tutor-card:hover .tutor-card-content {
+          top: 108px !important;
+
+          &-detail {
+            font-size: 13px !important;
           }
         }
       }

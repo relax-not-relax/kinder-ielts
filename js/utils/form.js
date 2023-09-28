@@ -22,11 +22,13 @@ export function formSubmit() {
                     // Reload the page after a delay (e.g., 2 seconds)
                     setTimeout(() => {
                         thankYouModal.hide();
+                        location.reload();
                     }, 3700); 
                 } else {
                     console.error('Form submission failed.');
                 }
             })
+            
             .catch(error => console.error('Error!', error.message))
     })
 }
