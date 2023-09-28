@@ -1,0 +1,51 @@
+@include media-sm-landscape {
+  .big-banner {
+    height: 79vh !important;
+  }
+
+  .sub-banner {
+    &-container {
+      padding: 0 !important;
+
+      .card-group {
+        gap: 10px !important;
+        .card {
+          padding: 20px 17px !important;
+          margin: 0 !important;
+          display: flex;
+          flex-wrap: wrap;
+          img {
+            width: 30%;
+          }
+
+          &-body {
+            padding-top: 15px !important;
+
+            .card-title {
+              font-size: 15px;
+            }
+
+            .card-text {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+    .footer-container {
+        position: absolute !important;
+        left: 0;
+
+    }
+
+    .kinder-copyright {
+        position: absolute !important;
+        bottom: 0;
+        left: 32%;
+      }
+  }
+}
