@@ -1033,6 +1033,47 @@ footer .kinder-copyright span {
     font-size: 12px !important;
   }
 }
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .big-banner {
+    height: 79vh !important;
+  }
+  .sub-banner-container {
+    padding: 0 !important;
+  }
+  .sub-banner-container .card-group {
+    gap: 10px !important;
+  }
+  .sub-banner-container .card-group .card {
+    padding: 20px 17px !important;
+    margin: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sub-banner-container .card-group .card img {
+    width: 30%;
+  }
+  .sub-banner-container .card-group .card-body {
+    padding-top: 15px !important;
+  }
+  .sub-banner-container .card-group .card-body .card-title {
+    font-size: 15px;
+  }
+  .sub-banner-container .card-group .card-body .card-text {
+    font-size: 12px;
+  }
+  footer {
+    position: relative;
+  }
+  footer .footer-container {
+    position: absolute !important;
+    left: 0;
+  }
+  footer .kinder-copyright {
+    position: absolute !important;
+    bottom: 0;
+    left: 32%;
+  }
+}
 body {
   font-family: "Barlow", sans-serif;
   line-height: 1;
