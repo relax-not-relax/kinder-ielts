@@ -691,7 +691,7 @@ footer .kinder-copyright span {
   border-radius: 20px;
 }
 
-@media screen and (min-width: 390px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) and (orientation: portrait) {
   .big-banner-container {
     padding: 0 20px;
   }
@@ -1333,7 +1333,7 @@ footer .kinder-copyright span {
     margin-top: 10px;
   }
 }
-@media screen and (min-width: 390px) and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 768px) and (orientation: landscape) {
   .navbar img {
     width: 100px !important;
   }

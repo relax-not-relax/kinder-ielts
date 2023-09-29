@@ -26,13 +26,13 @@ $primary-section-color: #EDE6D6;
 }
 
 @mixin media-sm {
-    @media screen and (min-width: 390px) and (max-width: 768px) {
+    @media screen and (min-width: 375px) and (max-width: 768px) and (orientation: portrait) {
         @content;
     }
 }
 
 @mixin media-sm-land {
-    @media screen and (min-width: 390px) and (max-width: 768px) and (orientation: landscape) {
+    @media only screen and (min-width: 375px) and (max-width: 768px) and (orientation: landscape) {
         @content;
     }
 }
