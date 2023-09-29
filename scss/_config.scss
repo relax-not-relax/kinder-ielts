@@ -26,7 +26,7 @@ $primary-section-color: #EDE6D6;
 }
 
 @mixin media-sm {
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 390px) and (max-width: 768px) {
         @content;
     }
 }
@@ -44,7 +44,7 @@ $primary-section-color: #EDE6D6;
 }
 
 @mixin media-sm-landscape {
-    @media screen and (min-width: 844px) and (max-width: 1024px) {
+    @media screen and (min-width: 844px) and (max-width: 896px) {
         @content;
     }
 }
