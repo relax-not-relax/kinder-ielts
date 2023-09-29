@@ -696,7 +696,7 @@ footer .kinder-copyright span {
     padding: 0 20px;
   }
   .big-banner {
-    height: 30vh;
+    height: 25vh;
   }
   .big-banner .banner-header-text {
     font-size: 35px;
@@ -1033,7 +1033,7 @@ footer .kinder-copyright span {
     font-size: 12px !important;
   }
 }
-@media screen and (max-width: 844px) {
+@media screen and (min-width: 844px) and (max-width: 1024px) {
   .navbar img {
     width: 100px !important;
   }
