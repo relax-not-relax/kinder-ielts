@@ -32,7 +32,7 @@ $primary-section-color: #EDE6D6;
 }
 
 @mixin media-sm-land {
-    @media only screen and (min-width: 375px) and (max-width: 768px) and (orientation: landscape) {
+    @media screen and (min-width: 375px) and (max-width: 768px) and (orientation: landscape) {
         @content;
     }
 }
@@ -50,7 +50,7 @@ $primary-section-color: #EDE6D6;
 }
 
 @mixin media-sm-landscape {
-    @media screen and (min-width: 844px) and (max-width: 896px) and (min-height: 390px) and (max-height: 414px){
+    @media screen and (min-width: 844px) and (max-width: 896px) and (orientation: landscape) {
         @content;
     }
 }
