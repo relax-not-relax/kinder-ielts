@@ -34,6 +34,42 @@
     }
   }
 
+  .big-banner-tutor {
+    height: 25vh !important;
+    background-position: right center !important;
+
+    &-container {
+      padding: 0 20px !important;
+    }
+    .banner-header {
+      &-text {
+        font-size: 35px !important;
+      }
+
+      &-decor {
+        width: 43px !important ;
+        bottom: 27px !important;
+        left: 185px !important;
+      }
+    }
+
+    .banner-sub-header {
+      width: 210px !important;
+      margin-bottom: 10px !important;
+
+      h2 {
+        font-size: 10px !important;
+      }
+    }
+
+    .banner-btn-detail {
+      width: 150px !important;
+      font-size: 12px !important;
+      padding: 10px 2px !important;
+      left: 0px !important;
+    }
+  }
+
   .brand-logo {
     width: 80px;
   }
@@ -71,6 +107,10 @@
   .sub-banner {
     height: fit-content;
 
+    &-custom-tutor {
+      padding: 0 20px !important;
+    }
+
     &-container {
       padding: 0 20px;
 
@@ -82,6 +122,7 @@
       h2 {
         font-size: 25px !important;
         width: 100%;
+        text-align: center !important;
       }
 
       .card-group {
@@ -182,6 +223,93 @@
     }
   }
 
+  .our-tutors-tutor {
+    height: fit-content !important;
+    padding: 30px 0 !important;
+    padding: 100px 0 100px 0 !important;
+
+    .img-decor {
+      height: 50% !important;
+    }
+
+    .tutor-carousel {
+      width: 100% !important;
+      height: 600px !important;
+
+      .carousel-control-prev {
+        .carousel-control-prev-icon {
+          width: 30px !important;
+          height: 30px !important;
+          background: url("../images/angle-left-b.svg");
+        }
+      }
+
+      .carousel-control-next {
+        .carousel-control-next-icon {
+          width: 30px !important;
+          height: 30px !important;
+          background: url("../images/angle-right-b.svg");
+        }
+      }
+
+      &__item {
+        display: block !important;
+        img {
+          width: 100% !important;
+          height: 100% !important;
+        }
+        &-dt {
+          margin: 20px 0 !important;
+
+          h3 {
+            font-size: 30px !important;
+            text-align: center !important;
+          }
+
+          ul {
+            li {
+              font-size: 14px !important;
+            }
+          }
+
+          .band {
+            width: 100% !important;
+            margin-top: 10px !important;
+
+            &-div {
+              width: 110px !important;
+              p {
+                font-size: 15px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .kinder-tutors {
+      h2 {
+        margin-top: 20px !important;
+      }
+      h5 {
+        font-size: 15px !important;
+      }
+
+      .row-sm {
+        display: block !important;
+
+        .tutor {
+          &-img {
+            margin-bottom: 50px !important;
+            img {
+              width: 70% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .test-ielts {
     padding: 30px 0;
     height: fit-content;
@@ -210,7 +338,6 @@
         img {
           width: 260px !important;
           height: 261px !important;
-          
         }
       }
 
@@ -255,8 +382,22 @@
     }
   }
 
-  .courses {
+  .test-ielts-tutor {
+    .certificate-btn {
+      width: 100% !important;
+      display: flex !important;
 
+      .decor {
+        display: none !important;
+
+        &-1 {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  .courses {
     height: 650px;
 
     &-img {
@@ -265,7 +406,6 @@
 
     &-container {
       padding: 0 25px !important;
-      
 
       h1 {
         font-size: 25px !important;
@@ -283,7 +423,6 @@
       a {
         margin: 50px 30px 0 30px !important;
         font-size: 15px;
-
       }
 
       .course-wrapper {
@@ -316,17 +455,52 @@
     }
   }
 
-  .info-form {
+  .courses-tutor {
+    height: 500px !important;
 
+    .courses-container {
+      a {
+        margin: 50px 90px !important;
+        height: 40px !important;
+        font-size: 15px !important;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .arrow {
+        margin-left: 10px !important;
+      }
+
+      .student-div {
+        img {
+          width: 95% !important;
+        }
+      }
+      .carousel-control-prev {
+        .carousel-control-prev-icon {
+          width: 30px !important;
+          height: 30px !important;
+        }
+      }
+
+      .carousel-control-next {
+        .carousel-control-next-icon {
+          width: 30px !important;
+          height: 30px !important;
+        }
+      }
+    }
+  }
+
+  .info-form {
     background: none;
 
     img {
       display: none !important;
-      
     }
 
     &-container {
-
       padding: 0 25px !important;
 
       .kinder-form {
@@ -359,7 +533,6 @@
         }
       }
     }
-
   }
 
   .custom-modal {
@@ -387,7 +560,6 @@
     height: 600px;
 
     .footer-container {
-
       &-1 {
         width: 320px;
         img {
@@ -439,7 +611,7 @@
       &-2 {
         padding-left: 0 !important;
         width: 320px;
-        
+
         .kinder-course {
           margin-top: 10px !important;
           h5 {

@@ -28,10 +28,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Kinder IELTS</title>
+    <title>Kinder IELTS's Tutors</title>
   </head>
   <body>
-    <div id="load-wrapper" style="display: none">
+    <div id="load-wrapper-tutor" style="display: none">
       <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem">
         <span class="visually-hidden">Loading...</span>
       </div>
@@ -61,7 +61,7 @@
     >
       <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand fs-4" href="">
+        <a class="navbar-brand fs-4" href=".">
           <img
             class="brand-logo"
             src="./images/brand-img.png"
@@ -117,7 +117,7 @@
                 <a
                   class="nav-link active ps-4 pe-4 nav-link-content"
                   aria-current="page"
-                  href="tutor.html"
+                  href="#"
                 >
                   <span class="nav-link-content">Our Tutors</span>
                 </a>
@@ -166,7 +166,7 @@
 
     <main>
       <!-- Big banner -->
-      <section class="col-md-12 big-banner">
+      <section class="col-md-12 big-banner-tutor">
         <div
           class="container big-banner-container d-flex flex-wrap align-content-center"
         >
@@ -182,7 +182,7 @@
             <div
               class="banner-sub-header d-flex flex-wrap align-content-center justify-content-center"
             >
-              <h2>IELTS ĐẠI HỌC - HỌC PHÍ MẦM NON</h2>
+              <h2>Lớp học Gia Sư - Sĩ số thấp - Chất lượng cao</h2>
             </div>
             <div class="banner-btn">
               <button id="bnn-btn" class="banner-btn-detail">
@@ -199,141 +199,299 @@
         <div
           class="container sub-banner-container d-flex flex-wrap align-content-center"
         >
-          <h4 class="col-md-12 d-flex justify-content-center">what we offer</h4>
-          <h2 class="col-md-12 d-flex justify-content-center">
-            for your future learning
+          <h4 class="col-md-12 d-flex justify-content-center">
+            What we believe
+          </h4>
+          <h2
+            class="col-md-12 d-flex justify-content-center sub-banner-custom-tutor"
+          >
+            Teaching Philosophy at Kinder IELTS
           </h2>
 
-          <div id="subBannerList" class="card-group"></div>
+          <div id="subBannerListTutor" class="card-group"></div>
         </div>
       </section>
 
       <!-- Out tutors -->
-      <section class="col-md-12 our-tutors">
+      <section class="col-md-12 our-tutors-tutor">
+        <img src="./images/decor-4.png" alt="" class="img-decor" />
+
         <div
-          class="container our-tutors-container d-flex flex-wrap align-content-center"
+          class="container sub-banner-container d-flex flex-wrap align-content-center our-tutors-tutor-ctn"
         >
-          <div
-            class="our-tutors-container-header col-md-12 d-flex justify-content-between"
-          >
-            <h1 class="">our tutors</h1>
-            <a href="" class="read-more d-flex align-items-center"
-              >Tìm hiểu thêm <i class="uil uil-angle-right"></i
-            ></a>
+          <div class="tutor-carousel">
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              style="height: 520px"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item carousel-item-1 active">
+                  <div class="d-flex tutor-carousel__item">
+                    <div class="tutor-carousel__item-img">
+                      <img src="./images/tutor-carou-1.png" alt="" />
+                    </div>
+
+                    <div class="tutor-carousel__item-dt">
+                      <h3>tutor Việt Phát</h3>
+                      <ul>
+                        <li>
+                          Tốt nghiệp ĐH Western Sydney Vietnam, ngành Applied
+                          Finance
+                        </li>
+                        <li>Chứng chỉ giảng dạy tiếng Anh TESOL</li>
+                        <li>Top 10 - Local Finalist P&G CEO Challenge 2022</li>
+                        <li>Kinh nghiệm gia sư cho 100+ học viên</li>
+                        <li>Đạt IELTS 8.0 lần thi đầu năm 2021</li>
+                      </ul>
+                      <div class="band">
+                        <div class="md-4">
+                          <div class="band-div md-12">
+                            <div class="md-8" style="width: 100px">
+                              <p>Reading</p>
+                            </div>
+                            <div
+                              class="md-4"
+                              style="
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                width: 70px;
+                              "
+                            >
+                              <p>9.0</p>
+                            </div>
+                          </div>
+                          <div class="band-div md-12" style="margin-top: 10px">
+                            <div class="md-8" style="width: 100px">
+                              <p>Listening</p>
+                            </div>
+                            <div
+                              class="md-4"
+                              style="
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                width: 70px;
+                              "
+                            >
+                              <p>8.0</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="md-4" style="margin-left: 10px">
+                          <div class="band-div md-12">
+                            <div class="md-8" style="width: 100px">
+                              <p>Writing</p>
+                            </div>
+                            <div
+                              class="md-4"
+                              style="
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                width: 70px;
+                              "
+                            >
+                              <p>7.0</p>
+                            </div>
+                          </div>
+                          <div class="band-div md-12" style="margin-top: 10px">
+                            <div class="md-8" style="width: 100px">
+                              <p>Speaking</p>
+                            </div>
+                            <div
+                              class="md-4"
+                              style="
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                width: 70px;
+                              "
+                            >
+                              <p>8.0</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="md-4 overall">
+                          <p>8.0</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="d-flex tutor-carousel__item">
+                    <div class="tutor-carousel__item-img">
+                      <img src="./images/tutor-carou-2.png" alt="" />
+                    </div>
+
+                    <div class="tutor-carousel__item-dt">
+                      <h3>tutor Nhã Quỳnh</h3>
+                      <ul>
+                        <li>
+                          Sinh viên năm 4, ngành Sư phạm Anh Đại học Sư phạm
+                          TP.HCM
+                        </li>
+                        <li>
+                          MC Song ngữ các hội thảo thuật tại ĐH Sư phạm & trung
+                          tâm IELTS lớn
+                        </li>
+                        <li>Kinh nghiệm gia sư cho 120+ học viên</li>
+                        <li>Là Head of Academic tại Kinder IELTS</li>
+                        <li>
+                          Là Tiktok content creator và truyền cảm hứng học IELTS
+                          cho nhiều học viên tại Kinder IELTS
+                        </li>
+                      </ul>
+                      <div class="band">
+                        <div class="md-4">
+                          <div class="band-div md-12">
+                            <div class="md-8" style="width: 100px">
+                              <p>Reading</p>
+                            </div>
+                            <div
+                              class="md-4"
+                              style="
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                width: 70px;
+                              "
+                            >
+                              <p>9.0</p>
+                            </div>
+                          </div>
+                          <div class="band-div md-12" style="margin-top: 10px">
+                            <div class="md-8" style="width: 100px">
+                              <p>Listening</p>
+                            </div>
+                            <div
+                              class="md-4"
+                              style="
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                width: 70px;
+                              "
+                            >
+                              <p>8.0</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="md-4" style="margin-left: 10px">
+                          <div class="band-div md-12">
+                            <div class="md-8" style="width: 100px">
+                              <p>Writing</p>
+                            </div>
+                            <div
+                              class="md-4"
+                              style="
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                width: 70px;
+                              "
+                            >
+                              <p>7.0</p>
+                            </div>
+                          </div>
+                          <div class="band-div md-12" style="margin-top: 10px">
+                            <div class="md-8" style="width: 100px">
+                              <p>Speaking</p>
+                            </div>
+                            <div
+                              class="md-4"
+                              style="
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                width: 70px;
+                              "
+                            >
+                              <p>8.0</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="md-4 overall">
+                          <p>8.0</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <div class="icon-custom">
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <div class="icon-custom">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
 
-          <div class="tutor-container col-md-12">
-            <div class="tutor-card">
-              <div class="tutor-card-img">
-                <img src="./images/img-tutor-1.png" alt="" />
-              </div>
-              <div class="tutor-card-content">
-                <div class="tutor-card-content-header">
-                  <h3>tutor Việt Phát</h3>
+          <div class="kinder-tutors">
+            <h2>đội ngũ gia sư tận tâm</h2>
+            <h5>Tại Kinder IELTS</h5>
 
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                      <img src="./images/award.svg" alt="" width="30px" />
-                      <p class="ielts-band d-flex align-items-center ms-1">
-                        IELTS 8.0
-                      </p>
-                    </div>
-
-                    <p class="exp-tutor d-flex align-items-center">
-                      2+ năm kinh nghiệm
-                    </p>
+            <div class="container" style="margin-top: 70px">
+              <div class="row g-2 row-sm">
+                <div class="col tutor">
+                  <div class="tutor-img">
+                    <img src="./images/tutor-1.png" alt="Kinder IELTS gia sư" />
                   </div>
                 </div>
-
-                <div class="tutor-card-content-detail">
-                  <p>
-                    Applied Finance Major <br />
-                    Đại học Western Sydney Vietnam
-                  </p>
-                  <p>
-                    Top10 P&G CEO Challenge <br />
-                    2+ năm kinh nghiệm tutors <br />
-                    Thực tập và làm việc tại Vietcombank & Bosch
-                  </p>
-
-                  <a href="#">Tìm hiểu thêm</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="tutor-card">
-              <div class="tutor-card-img">
-                <img src="./images/img-tutor-2.png" alt="" />
-              </div>
-              <div class="tutor-card-content">
-                <div class="tutor-card-content-header">
-                  <h3>tutor Nhã Quỳnh</h3>
-
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                      <img src="./images/award.svg" alt="" width="30px" />
-                      <p class="ielts-band d-flex align-items-center ms-1">
-                        IELTS 8.0
-                      </p>
-                    </div>
-
-                    <p class="exp-tutor d-flex align-items-center">
-                      3 năm kinh nghiệm
-                    </p>
+                <div class="col tutor">
+                  <div class="tutor-img">
+                    <img src="./images/tutor-2.png" alt="Kinder IELTS gia sư" />
                   </div>
                 </div>
-
-                <div class="tutor-card-content-detail">
-                  <p>
-                    Sư phạm Anh <br />
-                    Đại học Sư phạm TP.HCM
-                  </p>
-                  <p>
-                    3 năm kinh nghiệm tutors <br />
-                    MC tiếng Anh/song ngữ cho các hội thảo/cuộc thi học thuật
-                    <br />
-                    Sinh viên loại Giỏi
-                  </p>
-
-                  <a href="#">Tìm hiểu thêm</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="tutor-card">
-              <div class="tutor-card-img">
-                <img src="./images/img-tutor-3.png" alt="" />
-              </div>
-              <div class="tutor-card-content">
-                <div class="tutor-card-content-header">
-                  <h3>tutor Trọng Tín</h3>
-
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                      <img src="./images/award.svg" alt="" width="30px" />
-                      <p class="ielts-band d-flex align-items-center ms-1">
-                        IELTS 7.5
-                      </p>
-                    </div>
-
-                    <p class="exp-tutor d-flex align-items-center">
-                      3 năm kinh nghiệm
-                    </p>
+                <div class="col tutor">
+                  <div class="tutor-img">
+                    <img src="./images/tutor-3.png" alt="Kinder IELTS gia sư" />
                   </div>
-                </div>
-
-                <div class="tutor-card-content-detail">
-                  <p>
-                    Marketing Major <br />
-                    Đại học Western Sydney Vietnam
-                  </p>
-                  <p>
-                    Top10 P&G CEO Challenge <br />
-                    3 năm kinh nghiệm tutors <br />
-                    2 năm Thực tập và làm việc vị trí Content Writer
-                  </p>
-
-                  <a href="#">Tìm hiểu thêm</a>
                 </div>
               </div>
             </div>
@@ -342,104 +500,168 @@
       </section>
 
       <!-- Test -->
-      <section class="col-md-12 test-ielts">
+      <section class="col-md-12 test-ielts-tutor">
         <div
           class="container test-ielts-container d-flex flex-wrap align-content-center"
         >
-          <div class="col-md-6 col-sm-12 test-ielts-container-1 pe-4">
-            <h1>Kiểm tra trình độ của bạn miễn phí</h1>
-            <p class="pt-5 pb-5">
-              Kinder sẽ chấm và gửi kết quả cho bạn qua email sau 24h làm việc
-            </p>
-
-            <img src="./images/test-1.png" alt="" />
-          </div>
-
-          <div class="col-md-6 col-sm-12 test-ielts-container-2">
-            <img src="./images/test-2.png" alt="" />
-
-            <p>
-              Mục tiêu của bài kiểm tra nhằm đánh giá khả năng của bạn thông qua
-              các tiêu chí khác nhau
-            </p>
-
-            <div
-              class="test-div d-flex flex-wrap align-content-center justify-content-center"
-            >
-              <div
-                class="test-link d-flex flex-wrap align-content-center justify-content-center"
-              >
-                <a href="https://forms.gle/FaJk7BK26ZfRErMRA" target="_blank"
-                  >Test khả năng tiếng Anh</a
-                >
-              </div>
-
-              <div
-                class="test-link-1 d-flex flex-wrap align-content-center justify-content-center"
-              >
-                <a href="https://forms.gle/1BScrVwy9vJKGTmVA" target="_blank"
-                  >Test khả năng Tiếng Anh và IELTS</a
-                >
-              </div>
+          <div class="certificate-btn row">
+            <div class="col-md-3 col-sm-3 decor">
+              <i class="uil uil-angle-left-b"></i>
+            </div>
+            <div class="col-md-6 col-sm-6 certificate-btn-button">
+              <button>xem chứng chỉ IELTS</button>
+            </div>
+            <div class="col-md-3 col-sm-3 decor-1">
+              <i class="uil uil-angle-right-b"></i>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Course -->
-      <section id="sct-course" class="col-md-12 courses">
+      <section id="sct-course" class="col-md-12 courses-tutor">
         <img class="courses-img" src="./images/decor-3.png" alt="" />
 
         <div
           class="container courses-container d-flex flex-wrap align-content-center"
         >
           <h1 class="col-md-12 d-flex justify-content-center">
-            Các khóa học nổi bật
+            Các học Viên nổi bật
           </h1>
           <h4 class="col-md-12 d-flex justify-content-center">
             tại Kinder IELTS
           </h4>
 
-          <div class="course-wrapper">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <ul class="carousel">
-              <li class="course">
-                <div class="course-img">
-                  <img src="./images/course-hg.png" draggable="false" />
+          <div
+            id="carouselExampleAutoplaying1"
+            class="carousel slide student-div"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container" style="margin-top: 70px !important">
+                  <div class="row g-2">
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-1.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-2.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-3.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="course">
-                <div class="course-img">
-                  <img src="./images/course-mam.png" draggable="false" />
+              </div>
+              <div class="carousel-item">
+                <div class="container" style="margin-top: 70px !important">
+                  <div class="row g-2">
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-1.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-2.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-3.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="course">
-                <div class="course-img">
-                  <img src="./images/course-choi.png" draggable="false" />
+              </div>
+              <div class="carousel-item">
+                <div class="container" style="margin-top: 70px !important">
+                  <div class="row g-2">
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-1.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-2.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                    <div class="col student">
+                      <div class="student-img">
+                        <img
+                          src="./images/hocvien-3.png"
+                          alt="Kinder IELTS gia sư"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="course">
-                <div class="course-img">
-                  <img src="./images/course-choi.png" draggable="false" />
-                </div>
-              </li>
-              <li class="course">
-                <div class="course-img">
-                  <img src="./images/course-la.png" draggable="false" />
-                </div>
-              </li>
-              <li class="course">
-                <div class="course-img">
-                  <img src="./images/course-bon.png" draggable="false" />
-                </div>
-              </li>
-            </ul>
-            <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying1"
+              data-bs-slide="prev"
+            >
+              <div class="icon-custom">
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </div>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying1"
+              data-bs-slide="next"
+            >
+              <div class="icon-custom">
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </div>
+            </button>
           </div>
 
           <a class="d-flex justify-content-center align-items-center" href=""
-            >Xem tất cả</a
-          >
+            >Xem tất cả <i class="uil uil-angle-right arrow"></i>
+          </a>
         </div>
       </section>
 
@@ -604,7 +826,7 @@
       </section>
     </main>
 
-    <div class="modal" id="myModal">
+    <div class="modal" id="myModalTutor">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content custom-modal">
           <div
@@ -731,6 +953,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./js/main.js"></script>
-    <script type="module" src="./js/home.js"></script>
+    <script type="module" src="./js/tutor.js"></script>
   </body>
 </html>

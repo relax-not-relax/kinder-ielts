@@ -30,7 +30,7 @@ export function dragableCarousel() {
     const dragging = ((e) => {
         if (!isDragging) return; //if isDragging is false return from here
         //Update the scroll position of the carousel based on the cursor movement
-        carousel.scrollLeft = startScrollLeft - (e.pageX -startX);
+        carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
     });
 
     const dragStart = ((e) => {

@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap");
 
-@import 'config';
-@import 'home';
-@import 'menu';
-@import 'responsive';
-@import 'responsiveLandscape';
-
+@import "config";
+@import "home";
+@import "menu";
+@import "responsive";
+@import "responsiveLandscape";
+@import "tutor";
 
 body {
-    font-family: 'Barlow', sans-serif;
-    line-height: 1;
-    scroll-behavior: smooth;
+  font-family: "Barlow", sans-serif;
+  line-height: 1;
+  scroll-behavior: smooth;
 }
-
