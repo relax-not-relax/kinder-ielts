@@ -196,6 +196,77 @@
     }
   }
 
+  .sub-banner-course-2 {
+    height: fit-content !important;
+
+    &-container {
+      width: 100% !important;
+      padding: 0 20px;
+      .tutor-sub-div {
+        display: block !important;
+        &-img {
+          width: 100% !important;
+          padding: 0 !important;
+          justify-content: center !important;
+          img {
+            width: 50% !important;
+          }
+        }
+
+        &-dt {
+          width: 100% !important;
+
+          h3 {
+            font-size: 30px !important;
+            text-align: center !important;
+          }
+          ul {
+            padding-left: 20px !important;
+            li {
+              font-size: 13px !important;
+            }
+          }
+
+          .band {
+            width: 100% !important;
+            margin-top: 30px !important;
+
+            &-div {
+              width: 110px !important;
+
+              p {
+                font-size: 13px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sub-banner-course-3 {
+    height: fit-content !important;
+
+    &-container {
+      width: 100% !important;
+      .kinder-tutors {
+        padding-bottom: 0 !important;
+        .row-sm {
+          display: block !important;
+
+          .tutor {
+            &-img {
+              margin-bottom: 50px !important;
+              img {
+                width: 70% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .our-tutors {
     height: fit-content;
     padding: 30px 0;
@@ -410,6 +481,166 @@
             li {
               font-size: 17px !important;
             }
+          }
+        }
+      }
+    }
+  }
+
+  .our-tutors-course-2 {
+    padding: 50px 0 !important;
+    min-height: fit-content !important;
+    .img-decor {
+      width: 90% !important;
+
+      &-1 {
+        width: 90% !important;
+      }
+    }
+
+    &-container {
+      padding: 0 20px !important;
+      &-text {
+        .h2-tutor {
+          font-size: 30px !important;
+
+          &-1 {
+            font-size: 35px !important;
+            -webkit-text-stroke: 2px #099258 !important;
+          }
+        }
+
+        .p-tutor {
+          font-size: 17px !important;
+          margin-top: 30px !important;
+          width: 100% !important;
+        }
+
+        .fee-div {
+          margin-top: 30px !important;
+          .fee {
+            width: 100% !important;
+          }
+        }
+
+        .step {
+          margin-top: 30px !important;
+          .p-step {
+            font-size: 20px !important;
+          }
+
+          p {
+            width: 100% !important;
+            margin-top: 20px !important;
+            font-size: 17px !important;
+          }
+
+          ul {
+            li {
+              font-size: 17px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .our-tutors-course-3 {
+    padding: 50px 0 !important;
+    min-height: fit-content !important;
+    .img-decor {
+      width: 90% !important;
+
+      &-1 {
+        width: 90% !important;
+      }
+    }
+
+    &-container {
+      padding: 0 20px !important;
+      &-text {
+        .h2-tutor {
+          font-size: 30px !important;
+
+          &-1 {
+            font-size: 35px !important;
+          }
+        }
+
+        .p-tutor {
+          font-size: 17px !important;
+          margin-top: 30px !important;
+          width: 100% !important;
+        }
+
+        .fee-div {
+          margin-top: 30px !important;
+          .fee {
+            width: 100% !important;
+          }
+        }
+
+        .step {
+          margin-top: 30px !important;
+          .p-step {
+            font-size: 20px !important;
+          }
+
+          p {
+            width: 100% !important;
+            margin-top: 20px !important;
+            font-size: 17px !important;
+          }
+
+          ul {
+            li {
+              font-size: 17px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .our-tutors-course-4 {
+    padding: 50px 0 !important;
+    min-height: fit-content !important;
+    .img-decor {
+      width: 90% !important;
+
+      &-1 {
+        width: 90% !important;
+      }
+    }
+
+    &-container {
+      padding: 0 20px !important;
+      &-text {
+        .h2-tutor {
+          font-size: 30px !important;
+
+          &-1 {
+            font-size: 35px !important;
+            -webkit-text-stroke: 2px #099258 !important;
+          }
+        }
+
+        .p-tutor {
+          font-size: 17px !important;
+          margin-top: 30px !important;
+          width: 100% !important;
+
+          &-2 {
+            font-size: 17px !important;
+            margin-top: 80px !important;
+            width: 100% !important;
+          }
+        }
+
+        .fee-div {
+          margin-top: 30px !important;
+          .fee {
+            width: 100% !important;
           }
         }
       }

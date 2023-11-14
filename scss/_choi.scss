@@ -1,0 +1,42 @@
+.sub-banner-course-3 {
+  width: 100%;
+  height: 800px;
+  background: #fffced;
+  padding: 60px 0;
+
+  &-container {
+    height: 100%;
+
+    .kinder-tutors {
+      width: 100%;
+      padding-bottom: 50px;
+      .tutor {
+        &-img {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#load-wrapper-choi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  z-index: 9999;
+  @include transition-ease;
+}
+
+.fade-out-anim {
+  opacity: 0;
+  visibility: hidden;
+}
