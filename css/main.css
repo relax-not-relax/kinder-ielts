@@ -9,7 +9,7 @@
 }
 
 .big-banner {
-  background: url("../images/tutor-bnn-1.png") no-repeat;
+  background: url("../images/tutor-bnn-1-new.png") no-repeat;
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -150,8 +150,16 @@
 
 .our-tutors {
   width: 100%;
-  height: 900px;
+  height: 1000px;
   background: var(--bg-blur, linear-gradient(103deg, #e2ffe1 -2.42%, #fff8cf 114.41%));
+  position: relative;
+}
+.our-tutors .decor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 33%;
 }
 .our-tutors-container {
   height: 100%;
@@ -273,10 +281,26 @@
   height: 300px;
   top: 160px;
 }
+.our-tutors-container a {
+  width: 100%;
+  margin: 50px 365px 0px 365px;
+  height: 50px;
+  background: #099258;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.our-tutors-container a i {
+  margin-left: 20px;
+}
 
 .test-ielts {
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   background: #fffced;
 }
 .test-ielts-container {
@@ -288,6 +312,8 @@
   font-weight: 700;
   line-height: normal;
   color: #099258;
+  width: 450px;
+  text-transform: capitalize;
 }
 .test-ielts-container-1 p {
   font-size: 20px;
@@ -295,8 +321,8 @@
   color: #717171;
 }
 .test-ielts-container-1 img {
-  width: 432px;
-  height: 433px;
+  width: 476px;
+  height: 500px;
 }
 .test-ielts-container-2 {
   position: relative;
@@ -306,8 +332,8 @@
   position: absolute;
   bottom: 350px;
   right: 50px;
-  width: 480px;
-  height: 480px;
+  width: 462px;
+  height: 500px;
 }
 .test-ielts-container-2 p {
   position: absolute;
@@ -323,16 +349,16 @@
   height: 50px;
   font-size: 20px;
   font-weight: 600;
-  border: 2px solid #78bc71;
+  border: 2px solid #099258;
   border-radius: 30px;
   transition: all 0.5s ease-in-out;
 }
 .test-ielts-container-2 .test-link a {
-  color: #78bc71;
+  color: #099258;
   text-decoration: none;
 }
 .test-ielts-container-2 .test-link:hover {
-  background: #78bc71;
+  background: #099258;
   cursor: pointer;
 }
 .test-ielts-container-2 .test-link:hover a {
@@ -345,21 +371,14 @@
   height: 50px;
   font-size: 20px;
   font-weight: 600;
-  border: 2px solid #78bc71;
-  background: #78bc71;
+  border: 2px solid #ffe85b;
+  background: #ffe85b;
   border-radius: 30px;
   transition: all 0.5s ease-in-out;
 }
 .test-ielts-container-2 .test-link-1 a {
-  color: #fff;
+  color: #099258;
   text-decoration: none;
-}
-.test-ielts-container-2 .test-link-1:hover {
-  background: transparent;
-  cursor: pointer;
-}
-.test-ielts-container-2 .test-link-1:hover a {
-  color: #78bc71;
 }
 .test-ielts-container-2 .test-div {
   position: absolute;
@@ -369,7 +388,7 @@
 
 .courses {
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   background: #ede6d6;
   position: relative;
 }
@@ -384,6 +403,135 @@
   height: 100%;
   z-index: 3;
   padding: 0 35px;
+}
+.courses-container h4 {
+  margin-bottom: 70px !important;
+}
+.courses-container .content {
+  width: 100%;
+}
+.courses-container .content-all {
+  width: 100%;
+}
+.courses-container .content-all .combo {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px 25px 15px 25px;
+  background: #fdf02d;
+  border-radius: 10px;
+}
+.courses-container .content-all .combo-details {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  margin-bottom: 15px;
+  background: url("../images/course-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border: solid 1px #099258;
+}
+.courses-container .content-all .combo-details-header {
+  width: 100%;
+  height: auto;
+  background: #099258;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.courses-container .content-all .combo-details-header h2 {
+  margin: 0 !important;
+  font-size: 35px;
+  color: #fdf02d;
+  font-weight: 700;
+}
+.courses-container .content-all .combo-details-el {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.courses-container .content-all .combo-details-el .course {
+  padding: 0 !important;
+}
+.courses-container .content-all .combo-details-el .course-el {
+  width: 220px;
+  height: 220px;
+  background: #ede6d6;
+  padding: 7px;
+  border: solid 1px #099258;
+  border-radius: 10px;
+}
+.courses-container .content-all .combo-details-el .course-el h2 {
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 35px;
+  font-weight: 900;
+  -webkit-text-stroke: 2px #099258;
+  color: #fdf02d;
+  text-transform: uppercase;
+}
+.courses-container .content-all .combo h5 {
+  font-style: italic;
+  color: #896114;
+  font-weight: 500;
+}
+.courses-container .content .class {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px 25px 15px 25px;
+  background: #fdf02d;
+  border-radius: 10px;
+}
+.courses-container .content .class-details {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  background: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: solid 1px #099258;
+}
+.courses-container .content .class-details-el {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+.courses-container .content .class-details-el .class-bx {
+  width: 100%;
+  height: 60px;
+  background: #fdf02d;
+  border-radius: 10px;
+  border: solid 1px #099258;
+}
+.courses-container .content .class-details-el .class-bx h3 {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #099258;
+}
+.courses-container .content .class-details-el .class-bx-hd {
+  width: 100%;
+  height: 60px;
+  background: #099258;
+  border-radius: 10px;
+}
+.courses-container .content .class-details-el .class-bx-hd a {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fdf02d;
+  text-decoration: none;
+}
+.courses-container .content .class h5 {
+  font-style: italic;
+  color: #896114;
+  font-weight: 500;
 }
 .courses-container h1 {
   color: #099258;
@@ -401,96 +549,6 @@
   line-height: normal;
   text-transform: capitalize;
   margin-bottom: 120px;
-}
-.courses-container a {
-  width: 100%;
-  margin: 80px 500px 0 500px;
-  height: 46px;
-  background: #78bc71;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: all 0.5s ease-in-out;
-}
-.courses-container a:hover {
-  margin: 80px 490px 0 490px;
-}
-.courses-container .course-wrapper {
-  width: 100%;
-  height: 370px;
-  max-width: 1320px;
-  position: relative;
-}
-.courses-container .course-wrapper i {
-  height: 50px;
-  width: 50px;
-  background: #fff;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  font-size: 1.25rem;
-  transform: translateY(-50%);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-  z-index: 10;
-  color: #78bc71;
-  font-weight: 600;
-}
-.courses-container .course-wrapper i:first-child {
-  left: -22px;
-}
-.courses-container .course-wrapper i:last-child {
-  right: -22px;
-}
-.courses-container .course-wrapper .carousel {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc(33.3333333333% - 10px);
-  padding-left: 0;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: 0;
-  scroll-behavior: smooth;
-}
-.courses-container .course-wrapper .carousel::-webkit-scrollbar {
-  display: none;
-}
-.courses-container .course-wrapper .carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-.courses-container .course-wrapper .carousel.dragging .course {
-  cursor: grab;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.courses-container .course-wrapper .carousel.no-transition {
-  scroll-behavior: auto;
-}
-.courses-container .course-wrapper .carousel .course {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  scroll-snap-align: start;
-}
-.courses-container .course-wrapper .carousel .course-img {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.courses-container .course-wrapper .carousel .course-img img {
-  width: 370px;
-  height: 370px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .info-form {
@@ -511,7 +569,7 @@
   position: absolute;
   bottom: 5%;
   left: 18%;
-  background: #fffced;
+  background: #fdf02d;
   border-radius: 10px;
   padding: 40px;
 }
@@ -544,7 +602,43 @@
 .info-form-container img {
   position: absolute;
   bottom: 0;
-  right: 12%;
+  right: 18%;
+  width: 35%;
+}
+.info-form-container .kinder-info {
+  position: absolute;
+  right: 15%;
+  bottom: 50%;
+}
+.info-form-container .kinder-info h5 {
+  color: #727272;
+  font-size: 27px;
+}
+.info-form-container .kinder-info ul {
+  padding-left: 0 !important;
+}
+.info-form-container .kinder-info ul .d-flex {
+  gap: 10px !important;
+}
+.info-form-container .kinder-info li {
+  list-style: none;
+  color: #fff;
+}
+.info-form-container .kinder-info li a {
+  text-decoration: none;
+  font-size: 25px !important;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+  font-weight: 500;
+}
+.info-form-container .kinder-info li a:hover {
+  color: #fcd733;
+}
+.info-form-container .kinder-info li i {
+  color: #000;
+  margin-right: 5px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .wrapper-hidden {
@@ -665,7 +759,7 @@ footer .footer-container-2 .kinder-course ul li a:hover {
 footer .kinder-copyright {
   height: 50px;
   background: #111;
-  border-top: 2px solid #1B1B1B;
+  border-top: 2px solid #1b1b1b;
 }
 footer .kinder-copyright span {
   color: #727272;
@@ -963,6 +1057,16 @@ footer .kinder-copyright span {
   .our-tutors-container .tutor-container .tutor-card:hover .tutor-card-content-detail {
     font-size: 13px !important;
   }
+  .our-tutors-container a {
+    margin: 0 !important;
+    font-size: 14px !important;
+    padding: 10px 30px !important;
+    line-height: normal;
+    margin: 30px 20px !important;
+  }
+  .our-tutors-container a i {
+    margin-left: 0 !important;
+  }
   .our-tutors-tutor {
     height: -moz-fit-content !important;
     height: fit-content !important;
@@ -1013,6 +1117,9 @@ footer .kinder-copyright span {
   .our-tutors-tutor .tutor-carousel__item-dt .band-div p {
     font-size: 15px !important;
   }
+  .our-tutors-tutor .kinder-tutors {
+    margin: 150px 0 0 0 !important;
+  }
   .our-tutors-tutor .kinder-tutors h2 {
     margin-top: 20px !important;
   }
@@ -1029,7 +1136,7 @@ footer .kinder-copyright span {
     width: 70% !important;
   }
   .our-tutors-course {
-    padding: 50px 0 !important;
+    padding: 70px 0 !important;
     min-height: -moz-fit-content !important;
     min-height: fit-content !important;
   }
@@ -1042,6 +1149,9 @@ footer .kinder-copyright span {
   .our-tutors-course-container {
     padding: 0 20px !important;
   }
+  .our-tutors-course-container-text {
+    width: 100% !important;
+  }
   .our-tutors-course-container-text .h2-tutor {
     font-size: 30px !important;
   }
@@ -1050,11 +1160,12 @@ footer .kinder-copyright span {
   }
   .our-tutors-course-container-text .p-tutor {
     font-size: 17px !important;
-    margin-top: 30px !important;
+    margin: 30px 0 !important;
     width: 100% !important;
   }
   .our-tutors-course-container-text .fee-div {
-    margin-top: 30px !important;
+    width: 100% !important;
+    margin: 30px 0 !important;
   }
   .our-tutors-course-container-text .fee-div .fee {
     width: 100% !important;
@@ -1070,11 +1181,14 @@ footer .kinder-copyright span {
     margin-top: 20px !important;
     font-size: 17px !important;
   }
+  .our-tutors-course-container-text .step ul {
+    margin-left: 0 !important;
+  }
   .our-tutors-course-container-text .step ul li {
     font-size: 17px !important;
   }
   .our-tutors-course-2 {
-    padding: 50px 0 !important;
+    padding: 70px 0 !important;
     min-height: -moz-fit-content !important;
     min-height: fit-content !important;
   }
@@ -1087,6 +1201,9 @@ footer .kinder-copyright span {
   .our-tutors-course-2-container {
     padding: 0 20px !important;
   }
+  .our-tutors-course-2-container-text {
+    width: 100% !important;
+  }
   .our-tutors-course-2-container-text .h2-tutor {
     font-size: 30px !important;
   }
@@ -1096,11 +1213,12 @@ footer .kinder-copyright span {
   }
   .our-tutors-course-2-container-text .p-tutor {
     font-size: 17px !important;
-    margin-top: 30px !important;
+    margin: 30px 0 !important;
     width: 100% !important;
   }
   .our-tutors-course-2-container-text .fee-div {
-    margin-top: 30px !important;
+    width: 100% !important;
+    margin: 30px 0 !important;
   }
   .our-tutors-course-2-container-text .fee-div .fee {
     width: 100% !important;
@@ -1115,6 +1233,9 @@ footer .kinder-copyright span {
     width: 100% !important;
     margin-top: 20px !important;
     font-size: 17px !important;
+  }
+  .our-tutors-course-2-container-text .step ul {
+    margin-left: 0 !important;
   }
   .our-tutors-course-2-container-text .step ul li {
     font-size: 17px !important;
@@ -1215,9 +1336,11 @@ footer .kinder-copyright span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100% !important;
   }
   .test-ielts-container-1 h1 {
     font-size: 25px !important;
+    width: 100% !important;
   }
   .test-ielts-container-1 p {
     font-size: 15px !important;
@@ -1273,13 +1396,15 @@ footer .kinder-copyright span {
     display: none !important;
   }
   .courses {
-    height: 650px;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding: 70px 0 !important;
   }
   .courses-img {
     width: 50%;
   }
   .courses-container {
-    padding: 0 25px !important;
+    padding: 0 10px !important;
   }
   .courses-container h1 {
     font-size: 25px !important;
@@ -1290,31 +1415,49 @@ footer .kinder-copyright span {
     z-index: 99;
     font-size: 15px !important;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 50px !important;
   }
   .courses-container a {
     margin: 50px 30px 0 30px !important;
     font-size: 15px;
   }
-  .courses-container .course-wrapper {
-    height: 300px;
+  .courses-container .content-all .combo {
+    margin-bottom: 30px !important;
   }
-  .courses-container .course-wrapper i:first-child {
-    left: -15px;
+  .courses-container .content-all .combo-details-header h2 {
+    font-size: 25px !important;
   }
-  .courses-container .course-wrapper i:last-child {
-    right: -15px;
+  .courses-container .content-all .combo-details-el .course-el {
+    width: 100% !important;
+    height: 240px !important;
+    margin: 10px 0 !important;
   }
-  .courses-container .course-wrapper .carousel {
-    grid-auto-columns: 100%;
-    gap: 50px;
+  .courses-container .content-all .combo-details-el .course-el h2 {
+    font-size: 35px !important;
   }
-  .courses-container .course-wrapper .carousel .course-img img {
-    width: 300px;
-    height: 300px;
+  .courses-container .content-all .combo h5 {
+    font-size: 15px !important;
+  }
+  .courses-container .content .class-details-el {
+    margin: 15px 0 !important;
+  }
+  .courses-container .content .class-details-el-div {
+    padding: 0 4px !important;
+  }
+  .courses-container .content .class-details-el-div .class-bx h3 {
+    font-size: 13px !important;
+  }
+  .courses-container .content .class-details-el-div .class-bx-hd a {
+    margin: 0 !important;
+    font-size: 15px !important;
+  }
+  .courses-container .content .class h5 {
+    font-size: 15px !important;
   }
   .courses-tutor {
-    height: 500px !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding: 100px 0 !important;
   }
   .courses-tutor .courses-container a {
     margin: 50px 90px !important;
@@ -1324,28 +1467,27 @@ footer .kinder-copyright span {
     font-weight: 700;
     text-transform: uppercase;
   }
-  .courses-tutor .courses-container .arrow {
-    margin-left: 10px !important;
+  .courses-tutor .courses-container h4 {
+    margin-bottom: 10px !important;
   }
-  .courses-tutor .courses-container .student-div img {
-    width: 95% !important;
-  }
-  .courses-tutor .courses-container .carousel-control-prev .carousel-control-prev-icon {
-    width: 30px !important;
-    height: 30px !important;
-  }
-  .courses-tutor .courses-container .carousel-control-next .carousel-control-next-icon {
-    width: 30px !important;
-    height: 30px !important;
+  .courses-tutor .courses-container .student-el {
+    padding: 40px !important;
+    margin: 0 !important;
   }
   .info-form {
     background: none;
+    padding: 100px 0 !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
   }
   .info-form img {
     display: none !important;
   }
   .info-form-container {
     padding: 0 25px !important;
+  }
+  .info-form-container .kinder-info {
+    display: none !important;
   }
   .info-form-container .kinder-form {
     position: inherit;
@@ -1369,6 +1511,17 @@ footer .kinder-copyright span {
   }
   .info-form-container .kinder-form select {
     font-size: 13px !important;
+  }
+  .info-form-container .test-div {
+    position: inherit !important;
+    margin-bottom: 50px !important;
+  }
+  .info-form-container .test-div .test-link {
+    width: 350px !important;
+    margin-bottom: 10px !important;
+  }
+  .info-form-container .test-div .test-link-1 {
+    width: 350px !important;
   }
   .custom-modal {
     padding-top: 25px;
@@ -1651,7 +1804,7 @@ footer .kinder-copyright span {
   .our-tutors {
     height: -moz-fit-content;
     height: fit-content;
-    padding: 30px 0;
+    padding: 50px 0;
   }
   .our-tutors-container {
     padding: 0 25px;
@@ -1698,6 +1851,12 @@ footer .kinder-copyright span {
   .our-tutors-container .tutor-container .tutor-card-content-header .exp-tutor {
     font-size: 13px;
   }
+  .our-tutors-container .tutor-container .tutor-card-content-detail a {
+    margin: 0 !important;
+    line-height: normal;
+    width: auto !important;
+    height: auto !important;
+  }
   .our-tutors-container .tutor-container .tutor-card:hover .tutor-card-img {
     top: -60px;
   }
@@ -1707,10 +1866,19 @@ footer .kinder-copyright span {
   .our-tutors-container .tutor-container .tutor-card:hover .tutor-card-content-detail {
     font-size: 13px !important;
   }
+  .our-tutors-container a {
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: normal;
+    margin: 50px 100px !important;
+  }
+  .our-tutors-container a i {
+    margin-left: 20px !important;
+  }
   .our-tutors-tutor {
     height: -moz-fit-content !important;
     height: fit-content !important;
-    padding: 100px 0 0 0 !important;
+    padding: 100px 0 !important;
   }
   .our-tutors-tutor .img-decor {
     height: 50% !important;
@@ -1764,6 +1932,9 @@ footer .kinder-copyright span {
   .our-tutors-tutor .tutor-carousel__item-dt .band-div p {
     font-size: 15px !important;
   }
+  .our-tutors-tutor .kinder-tutors {
+    margin: 0 !important;
+  }
   .our-tutors-tutor .kinder-tutors h2 {
     margin-top: 20px !important;
   }
@@ -1774,7 +1945,7 @@ footer .kinder-copyright span {
     margin-bottom: 50px !important;
   }
   .our-tutors-tutor .kinder-tutors .row-sm .tutor-img img {
-    width: 85% !important;
+    width: 70% !important;
   }
   .our-tutors-course {
     padding: 100px 0 !important;
@@ -1798,14 +1969,14 @@ footer .kinder-copyright span {
   }
   .our-tutors-course-container-text .p-tutor {
     font-size: 17px !important;
-    margin-top: 30px !important;
+    margin: 30px 0 !important;
     width: 100% !important;
   }
   .our-tutors-course-container-text .fee-div {
-    margin-top: 30px !important;
+    margin: 30px 0 !important;
   }
   .our-tutors-course-container-text .fee-div .fee {
-    width: 100% !important;
+    width: 80% !important;
   }
   .our-tutors-course-container-text .step {
     margin-top: 30px !important;
@@ -1822,7 +1993,7 @@ footer .kinder-copyright span {
     font-size: 17px !important;
   }
   .our-tutors-course-2 {
-    padding: 50px 0 !important;
+    padding: 100px 0 !important;
     min-height: -moz-fit-content !important;
     min-height: fit-content !important;
   }
@@ -1844,14 +2015,14 @@ footer .kinder-copyright span {
   }
   .our-tutors-course-2-container-text .p-tutor {
     font-size: 17px !important;
-    margin-top: 30px !important;
+    margin: 30px 0 !important;
     width: 100% !important;
   }
   .our-tutors-course-2-container-text .fee-div {
-    margin-top: 30px !important;
+    margin: 30px 0 !important;
   }
   .our-tutors-course-2-container-text .fee-div .fee {
-    width: 100% !important;
+    width: 80% !important;
   }
   .our-tutors-course-2-container-text .step {
     margin-top: 30px !important;
@@ -1966,6 +2137,7 @@ footer .kinder-copyright span {
   }
   .test-ielts-container-1 h1 {
     font-size: 30px !important;
+    width: 100% !important;
   }
   .test-ielts-container-1 p {
     font-size: 15px !important;
@@ -2014,10 +2186,12 @@ footer .kinder-copyright span {
     font-size: 15px !important;
   }
   .courses {
-    height: 650px;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding: 100px 0 !important;
   }
   .courses-img {
-    width: 50%;
+    width: 40%;
   }
   .courses-container {
     padding: 0 25px !important;
@@ -2031,28 +2205,24 @@ footer .kinder-copyright span {
     z-index: 99;
     font-size: 15px !important;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 50px !important;
   }
   .courses-container a {
     margin: 50px 100px 0 100px !important;
     font-size: 15px;
   }
-  .courses-container .course-wrapper {
-    height: 300px;
+  .courses-container .content-all .combo {
+    margin-bottom: 30px !important;
   }
-  .courses-container .course-wrapper i:first-child {
-    left: -15px;
+  .courses-container .content-all .combo-details-el .course-el {
+    width: 90% !important;
+    height: 190px !important;
   }
-  .courses-container .course-wrapper i:last-child {
-    right: -15px;
+  .courses-container .content-all .combo-details-el .course-el h2 {
+    font-size: 30px !important;
   }
-  .courses-container .course-wrapper .carousel {
-    grid-auto-columns: 100%;
-    gap: 50px;
-  }
-  .courses-container .course-wrapper .carousel .course-img img {
-    width: 300px;
-    height: 300px;
+  .courses-container .content .class-details-el .class-bx-hd a {
+    margin: 0 !important;
   }
   .courses-tutor {
     height: -moz-fit-content !important;
@@ -2083,12 +2253,19 @@ footer .kinder-copyright span {
   }
   .info-form {
     background: none;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding: 100px 0 !important;
   }
   .info-form img {
     display: none !important;
   }
+  .info-form-container .kinder-info {
+    display: none !important;
+  }
   .info-form-container .kinder-form {
     width: 65% !important;
+    position: inherit !important;
   }
   .info-form-container .kinder-form h4 {
     font-size: 25px !important;
@@ -2108,6 +2285,13 @@ footer .kinder-copyright span {
   }
   .info-form-container .kinder-form select {
     font-size: 15px !important;
+  }
+  .info-form-container .test-div {
+    position: inherit !important;
+    margin-bottom: 40px !important;
+  }
+  .info-form-container .test-div .test-link {
+    margin-bottom: 20px !important;
   }
   .custom-modal {
     padding-top: 25px;
@@ -2186,7 +2370,7 @@ footer .kinder-copyright span {
     padding-left: 20px !important;
   }
   .navbar .nav-link-content {
-    font-size: 15px;
+    font-size: 13px;
     transition: all 0.5s ease-in-out;
   }
   .navbar .nav-link-content:hover {
@@ -2432,6 +2616,9 @@ footer .kinder-copyright span {
   .our-tutors-container .tutor-container .tutor-card:hover .tutor-card-content-detail {
     font-size: 13px !important;
   }
+  .our-tutors-container a {
+    margin: 50px 150px !important;
+  }
   .our-tutors-tutor {
     height: -moz-fit-content !important;
     height: fit-content !important;
@@ -2472,7 +2659,7 @@ footer .kinder-copyright span {
     width: 500px !important;
   }
   .our-tutors-tutor .tutor-carousel__item .img-fix {
-    width: 50% !important;
+    width: 60% !important;
   }
   .our-tutors-tutor .tutor-carousel__item-dt {
     margin: 0 !important;
@@ -2496,6 +2683,10 @@ footer .kinder-copyright span {
   .our-tutors-tutor .tutor-carousel__item-dt .band-div p {
     font-size: 15px !important;
   }
+  .our-tutors-tutor .kinder-tutors {
+    margin: 0 !important;
+    margin-top: 100px !important;
+  }
   .our-tutors-tutor .kinder-tutors h2 {
     margin-top: 20px !important;
   }
@@ -2506,7 +2697,7 @@ footer .kinder-copyright span {
     margin-bottom: 50px !important;
   }
   .our-tutors-tutor .kinder-tutors .row-sm .tutor-img img {
-    width: 85% !important;
+    width: 60% !important;
   }
   .our-tutors-course {
     padding: 100px 0 !important;
@@ -2529,15 +2720,16 @@ footer .kinder-copyright span {
     font-size: 35px !important;
   }
   .our-tutors-course-container-text .p-tutor {
-    font-size: 17px !important;
-    margin-top: 30px !important;
+    font-size: 20px !important;
+    margin: 30px 0 !important;
     width: 100% !important;
   }
   .our-tutors-course-container-text .fee-div {
-    margin-top: 30px !important;
+    z-index: 99;
+    margin: 30px 0 !important;
   }
   .our-tutors-course-container-text .fee-div .fee {
-    width: 100% !important;
+    width: 80% !important;
   }
   .our-tutors-course-container-text .step {
     margin-top: 30px !important;
@@ -2554,7 +2746,7 @@ footer .kinder-copyright span {
     font-size: 17px !important;
   }
   .our-tutors-course-2 {
-    padding: 50px 0 !important;
+    padding: 100px 0 !important;
     min-height: -moz-fit-content !important;
     min-height: fit-content !important;
   }
@@ -2575,15 +2767,15 @@ footer .kinder-copyright span {
     -webkit-text-stroke: 2px #099258 !important;
   }
   .our-tutors-course-2-container-text .p-tutor {
-    font-size: 17px !important;
-    margin-top: 30px !important;
+    font-size: 20px !important;
+    margin: 30px 0 !important;
     width: 100% !important;
   }
   .our-tutors-course-2-container-text .fee-div {
-    margin-top: 30px !important;
+    margin: 30px 0 !important;
   }
   .our-tutors-course-2-container-text .fee-div .fee {
-    width: 100% !important;
+    width: 80% !important;
   }
   .our-tutors-course-2-container-text .step {
     margin-top: 30px !important;
@@ -2723,7 +2915,7 @@ footer .kinder-copyright span {
   .test-ielts-container-2 p {
     position: inherit;
     font-size: 15px !important;
-    top: 220px !important;
+    top: 280px !important;
     width: 350px !important;
     margin-bottom: 30px !important;
     margin-left: 50px !important;
@@ -2731,7 +2923,7 @@ footer .kinder-copyright span {
   .test-ielts-container-2 .test-div {
     position: inherit;
     right: 0 !important;
-    top: 220px !important;
+    top: 290px !important;
   }
   .test-ielts-container-2 .test-link {
     position: inherit;
@@ -2747,7 +2939,9 @@ footer .kinder-copyright span {
     font-size: 15px !important;
   }
   .courses {
-    height: 650px;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding: 100px 0 !important;
   }
   .courses-img {
     width: 50%;
@@ -2764,30 +2958,43 @@ footer .kinder-copyright span {
     z-index: 99;
     font-size: 15px !important;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 50px !important;
   }
-  .courses-container a {
-    margin: 50px 270px 0 270px !important;
-    font-size: 15px;
+  .courses-container .content-all .combo-details-header h2 {
+    font-size: 25px !important;
   }
-  .courses-container .course-wrapper {
-    height: 300px;
-    z-index: 999;
-    margin-top: 20px !important;
+  .courses-container .content-all .combo-details-el .course-el {
+    width: 95%;
+    height: 150px !important;
   }
-  .courses-container .course-wrapper i:first-child {
-    left: -15px;
+  .courses-container .content-all .combo-details-el .course-el h2 {
+    font-size: 24px !important;
   }
-  .courses-container .course-wrapper i:last-child {
-    right: -15px;
+  .courses-container .content-all .combo h5 {
+    font-size: 18px !important;
   }
-  .courses-container .course-wrapper .carousel {
-    grid-auto-columns: 30%;
-    gap: 40px;
+  .courses-container .content .class-details {
+    padding: 7px 8px !important;
   }
-  .courses-container .course-wrapper .carousel .course-img img {
-    width: 275px;
-    height: 275px;
+  .courses-container .content .class-details-el-div {
+    padding: 0 3px !important;
+  }
+  .courses-container .content .class-details-el-div .class-bx h3 {
+    font-size: 18px !important;
+  }
+  .courses-container .content .class-details-el-div .class-bx-hd a {
+    font-size: 18px !important;
+  }
+  .courses-container .content .class h5 {
+    font-size: 18px !important;
+  }
+  .courses-tutor {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding: 200px 0 !important;
+  }
+  .courses-tutor .courses-container a {
+    margin: 100px 350px 0 350px !important;
   }
   .info-form img {
     right: -20px;
@@ -2795,6 +3002,31 @@ footer .kinder-copyright span {
   }
   .info-form-container .kinder-form {
     left: 30px !important;
+  }
+  .info-form-container .kinder-info {
+    right: 3% !important;
+    bottom: 35%;
+  }
+  .info-form-container .kinder-info h5 {
+    font-size: 20px !important;
+  }
+  .info-form-container .kinder-info li a {
+    font-size: 18px !important;
+  }
+  .info-form-container .kinder-info li i {
+    font-size: 18px !important;
+  }
+  .info-form-container .test-div {
+    right: 22% !important;
+    bottom: 35% !important;
+  }
+  .info-form-container .test-div .test-link {
+    width: 300px !important;
+    font-size: 18px !important;
+  }
+  .info-form-container .test-div .test-link-1 {
+    font-size: 18px !important;
+    width: 300px !important;
   }
 }
 @media screen and (min-width: 844px) and (max-width: 896px) and (orientation: landscape) {
@@ -3098,7 +3330,7 @@ footer .kinder-copyright span {
   }
 }
 .big-banner-tutor {
-  background: url("../images/tutor-bnn-2.png") no-repeat;
+  background: url("../images/tutor-bnn-1-new.png") no-repeat;
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -3200,7 +3432,7 @@ footer .kinder-copyright span {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 100%;
+  height: 60%;
   z-index: 1;
 }
 .our-tutors-tutor .tutor-carousel {
@@ -3248,7 +3480,7 @@ footer .kinder-copyright span {
   align-items: center;
 }
 .our-tutors-tutor .tutor-carousel__item-img img {
-  width: 90%;
+  width: 80%;
 }
 .our-tutors-tutor .tutor-carousel__item-dt {
   margin-left: 80px;
@@ -3309,7 +3541,7 @@ footer .kinder-copyright span {
   z-index: 99;
   position: inherit !important;
   width: 100%;
-  margin-top: 120px !important;
+  margin: 120px 200px 0 200px;
 }
 .our-tutors-tutor .kinder-tutors h2 {
   text-align: center !important;
@@ -3323,13 +3555,16 @@ footer .kinder-copyright span {
   font-weight: 500 !important;
   color: #78bc71 !important;
 }
+.our-tutors-tutor .kinder-tutors .kd-2 {
+  margin-top: 70px;
+}
 .our-tutors-tutor .kinder-tutors .tutor-img {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
 }
 .our-tutors-tutor .kinder-tutors .tutor-img img {
-  width: 80%;
+  width: 70%;
 }
 
 .test-ielts-tutor {
@@ -3425,37 +3660,52 @@ footer .kinder-copyright span {
 .courses-tutor .courses-container a:hover {
   margin: 80px 500px 0 500px;
 }
-.courses-tutor .courses-container .student-div .student-img {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+.courses-tutor .courses-container .student-el img {
+  width: 100%;
 }
-.courses-tutor .courses-container .student-div .student-img img {
-  width: 80%;
+
+.info-form-container .test-link {
+  position: inherit;
+  bottom: 130px;
+  width: 428px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #099258;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
 }
-.courses-tutor .courses-container .student-div .carousel-control-prev {
-  justify-content: flex-start !important;
+.info-form-container .test-link a {
+  color: #099258;
+  text-decoration: none;
 }
-.courses-tutor .courses-container .student-div .carousel-control-prev .carousel-control-prev-icon {
-  width: 60px;
-  height: 60px;
-  background: url("../images/angle-left-b.svg");
+.info-form-container .test-link:hover {
+  background: #099258;
+  cursor: pointer;
 }
-.courses-tutor .courses-container .student-div .carousel-control-prev .icon-custom {
-  background: #fff !important;
-  border-radius: 50% !important;
+.info-form-container .test-link:hover a {
+  color: #fff;
 }
-.courses-tutor .courses-container .student-div .carousel-control-next {
-  justify-content: flex-end !important;
+.info-form-container .test-link-1 {
+  position: inherit;
+  bottom: 60px;
+  width: 428px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #ffe85b;
+  background: #ffe85b;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
 }
-.courses-tutor .courses-container .student-div .carousel-control-next .carousel-control-next-icon {
-  width: 60px;
-  height: 60px;
-  background: url("../images/angle-right-b.svg");
+.info-form-container .test-link-1 a {
+  color: #099258;
+  text-decoration: none;
 }
-.courses-tutor .courses-container .student-div .carousel-control-next .icon-custom {
-  background: #fff !important;
-  border-radius: 50% !important;
+.info-form-container .test-div {
+  position: absolute;
+  right: 28%;
+  bottom: 50%;
 }
 
 #load-wrapper-tutor {
@@ -3549,10 +3799,11 @@ footer .kinder-copyright span {
 
 .our-tutors-course {
   width: 100%;
-  min-height: 1200px;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   background: #099258;
   position: relative;
-  padding: 100px 0 170px 0;
+  padding: 200px 0 200px 0;
 }
 .our-tutors-course .img-decor {
   position: absolute;
@@ -3566,6 +3817,9 @@ footer .kinder-copyright span {
   bottom: 0;
   width: 50%;
 }
+.our-tutors-course-container {
+  height: 100%;
+}
 .our-tutors-course-container-text .h2-tutor {
   font-size: 65px;
   text-transform: uppercase;
@@ -3576,38 +3830,39 @@ footer .kinder-copyright span {
   font-size: 80px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffe85b;
+  color: #fdf02d;
 }
 .our-tutors-course-container-text .p-tutor {
-  font-size: 27px;
-  margin-top: 50px;
-  width: 70%;
+  font-size: 40px;
+  margin: 70px 0;
+  width: 80%;
   line-height: normal;
-  font-weight: 500;
   color: #fff;
+  font-weight: 600;
 }
 .our-tutors-course-container-text .p-tutor span {
-  color: #ffe85b;
+  color: #fdf02d;
 }
 .our-tutors-course-container-text .fee-div {
-  width: 100%;
+  width: 600px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .our-tutors-course-container-text .fee-div .fee {
-  width: 70%;
+  width: 100%;
 }
 .our-tutors-course-container-text .step {
   margin-top: 50px;
 }
 .our-tutors-course-container-text .step .p-step {
-  font-size: 23px;
-  background: #ffe85b;
+  font-size: 35px;
+  background: #fdf02d;
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 20px;
+  border-radius: 6px;
   color: #099258;
   font-weight: 700;
 }
@@ -3619,11 +3874,18 @@ footer .kinder-copyright span {
   font-size: 27px;
   margin-top: 30px;
 }
+.our-tutors-course-container-text .step ul {
+  margin-top: 30px;
+  margin-left: 20px;
+}
 .our-tutors-course-container-text .step ul li {
   color: #fff;
-  font-size: 27px;
+  font-size: 35px;
   line-height: normal;
-  font-weight: 500;
+  font-weight: 600;
+}
+.our-tutors-course-container-text .step ul li span {
+  color: #fdf02d;
 }
 
 #load-wrapper-hatgiong {
@@ -3717,10 +3979,11 @@ footer .kinder-copyright span {
 
 .our-tutors-course-2 {
   width: 100%;
-  min-height: 1200px;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   background: #fffdf5;
   position: relative;
-  padding: 100px 0 170px 0;
+  padding: 200px 0 200px 0;
 }
 .our-tutors-course-2 .img-decor {
   position: absolute;
@@ -3751,48 +4014,48 @@ footer .kinder-copyright span {
   -webkit-text-stroke: 3px #099258;
 }
 .our-tutors-course-2-container-text .p-tutor {
-  font-size: 27px;
-  margin-top: 50px;
-  width: 70%;
+  font-size: 40px;
+  margin: 70px 0;
+  width: 80%;
   line-height: normal;
-  font-weight: 500;
   color: #099258;
+  font-weight: 600;
+}
+.our-tutors-course-2-container-text .p-tutor span {
+  color: #896114;
 }
 .our-tutors-course-2-container-text .fee-div {
-  width: 100%;
+  width: 600px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .our-tutors-course-2-container-text .fee-div .fee {
-  width: 70%;
+  width: 100%;
 }
 .our-tutors-course-2-container-text .step {
   margin-top: 50px;
 }
 .our-tutors-course-2-container-text .step .p-step {
-  font-size: 23px;
+  font-size: 35px;
   background: #099258;
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 20px;
-  color: #ffe85b;
+  border-radius: 6px;
+  color: #fdf02d;
   font-weight: 700;
 }
-.our-tutors-course-2-container-text .step p {
-  width: 59%;
-  line-height: normal;
-  font-weight: 500;
-  color: #099258;
-  font-size: 27px;
+.our-tutors-course-2-container-text .step ul {
   margin-top: 30px;
+  margin-left: 20px;
 }
 .our-tutors-course-2-container-text .step ul li {
   color: #099258;
-  font-size: 27px;
+  font-size: 35px;
   line-height: normal;
-  font-weight: 500;
+  font-weight: 600;
 }
 .our-tutors-course-2-container-text .step ul li span {
   color: #896114;
@@ -4028,6 +4291,63 @@ footer .kinder-copyright span {
 .fade-out-anim {
   opacity: 0;
   visibility: hidden;
+}
+
+.courses-tutor-1 {
+  width: 100%;
+  height: auto;
+  background: #ede6d6;
+  position: relative;
+  padding: 100px 0;
+}
+.courses-tutor-1 .courses-container {
+  height: 100%;
+  z-index: 3;
+  padding: 0 35px;
+}
+.courses-tutor-1 .courses-container .arrow {
+  font-size: 25px !important;
+  margin-left: 15px;
+}
+.courses-tutor-1 .courses-container h1 {
+  color: #099258;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.courses-tutor-1 .courses-container h4 {
+  color: #78bc71;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.courses-tutor-1 .courses-container a {
+  width: 100%;
+  margin: 80px 520px 0 520px;
+  height: 50px;
+  background: #099258;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fdf02d;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.courses-tutor-1 .courses-container a:hover {
+  margin: 80px 500px 0 500px;
+}
+.courses-tutor-1 .courses-container .student {
+  margin-top: 30px;
+}
+.courses-tutor-1 .courses-container .student-el img {
+  width: 100%;
 }
 
 body {

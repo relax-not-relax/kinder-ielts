@@ -83,10 +83,10 @@
 
 .our-tutors-course-2 {
   width: 100%;
-  min-height: 1200px;
+  min-height: fit-content;
   background: #fffdf5;
   position: relative;
-  padding: 100px 0 170px 0;
+  padding: 200px 0 200px 0;
 
   .img-decor {
     position: absolute;
@@ -120,50 +120,49 @@
         }
       }
       .p-tutor {
-        font-size: 27px;
-        margin-top: 50px;
-        width: 70%;
+        font-size: 40px;
+        margin: 70px 0;
+        width: 80%;
         line-height: normal;
-        font-weight: 500;
         color: $header-color;
+        font-weight: 600;
+
+        span {
+          color: #896114;
+        }
       }
 
       .fee-div {
-        width: 100%;
+        width: 600px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
         .fee {
-          width: 70%;
+          width: 100%;
         }
       }
 
       .step {
         margin-top: 50px;
         .p-step {
-          font-size: 23px;
+          font-size: 35px;
           background: $header-color;
           width: fit-content;
           padding: 15px 20px;
-          color: $secondary-button-color;
+          border-radius: 6px;
+          color: #fdf02d;
           font-weight: 700;
         }
-        p {
-          width: 59%;
-          line-height: normal;
-          font-weight: 500;
-          color: $header-color;
-          font-size: 27px;
-          margin-top: 30px;
-        }
+
         ul {
+          margin-top: 30px;
+          margin-left: 20px;
           li {
             color: $header-color;
-            font-size: 27px;
+            font-size: 35px;
             line-height: normal;
-            font-weight: 500;
-
+            font-weight: 600;
             span {
               color: #896114;
             }

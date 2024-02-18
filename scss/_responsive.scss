@@ -340,6 +340,18 @@
           }
         }
       }
+
+      a {
+        margin: 0 !important;
+        font-size: 14px !important;
+        padding: 10px 30px !important;
+        line-height: normal;
+        margin: 30px 20px !important;
+
+        i {
+          margin-left: 0 !important;
+        }
+      }
     }
   }
 
@@ -408,6 +420,7 @@
     }
 
     .kinder-tutors {
+      margin: 150px 0 0 0 !important;
       h2 {
         margin-top: 20px !important;
       }
@@ -431,8 +444,9 @@
   }
 
   .our-tutors-course {
-    padding: 50px 0 !important;
+    padding: 70px 0 !important;
     min-height: fit-content !important;
+
     .img-decor {
       width: 90% !important;
 
@@ -443,7 +457,9 @@
 
     &-container {
       padding: 0 20px !important;
+
       &-text {
+        width: 100% !important;
         .h2-tutor {
           font-size: 30px !important;
 
@@ -454,12 +470,13 @@
 
         .p-tutor {
           font-size: 17px !important;
-          margin-top: 30px !important;
+          margin: 30px 0 !important;
           width: 100% !important;
         }
 
         .fee-div {
-          margin-top: 30px !important;
+          width: 100% !important;
+          margin: 30px 0 !important;
           .fee {
             width: 100% !important;
           }
@@ -478,6 +495,7 @@
           }
 
           ul {
+            margin-left: 0 !important;
             li {
               font-size: 17px !important;
             }
@@ -488,7 +506,7 @@
   }
 
   .our-tutors-course-2 {
-    padding: 50px 0 !important;
+    padding: 70px 0 !important;
     min-height: fit-content !important;
     .img-decor {
       width: 90% !important;
@@ -501,6 +519,7 @@
     &-container {
       padding: 0 20px !important;
       &-text {
+        width: 100% !important;
         .h2-tutor {
           font-size: 30px !important;
 
@@ -512,12 +531,13 @@
 
         .p-tutor {
           font-size: 17px !important;
-          margin-top: 30px !important;
+          margin: 30px 0 !important;
           width: 100% !important;
         }
 
         .fee-div {
-          margin-top: 30px !important;
+          width: 100% !important;
+          margin: 30px 0 !important;
           .fee {
             width: 100% !important;
           }
@@ -536,6 +556,7 @@
           }
 
           ul {
+            margin-left: 0 !important;
             li {
               font-size: 17px !important;
             }
@@ -660,9 +681,12 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100% !important;
 
         h1 {
           font-size: 25px !important;
+          width: 100% !important;
+          //text-align: center !important;
         }
 
         p {
@@ -735,14 +759,15 @@
   }
 
   .courses {
-    height: 650px;
+    height: fit-content !important;
+    padding: 70px 0 !important;
 
     &-img {
       width: 50%;
     }
 
     &-container {
-      padding: 0 25px !important;
+      padding: 0 10px !important;
 
       h1 {
         font-size: 25px !important;
@@ -754,7 +779,7 @@
         z-index: 99;
         font-size: 15px !important;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px !important;
       }
 
       a {
@@ -762,30 +787,87 @@
         font-size: 15px;
       }
 
-      .course-wrapper {
-        height: 300px;
+      // .course-wrapper {
+      //   height: 300px;
 
-        i {
-          &:first-child {
-            left: -15px;
-          }
+      //   i {
+      //     &:first-child {
+      //       left: -15px;
+      //     }
 
-          &:last-child {
-            right: -15px;
+      //     &:last-child {
+      //       right: -15px;
+      //     }
+      //   }
+
+      //   .carousel {
+      //     grid-auto-columns: 100%;
+      //     gap: 50px;
+
+      //     .course {
+      //       &-img {
+      //         img {
+      //           width: 300px;
+      //           height: 300px;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+      .content {
+        &-all {
+          .combo {
+            margin-bottom: 30px !important;
+            &-details {
+              &-header {
+                h2 {
+                  font-size: 25px !important;
+                }
+              }
+              &-el {
+                .course {
+                  &-el {
+                    width: 100% !important;
+                    height: 240px !important;
+                    margin: 10px 0 !important;
+
+                    h2 {
+                      font-size: 35px !important;
+                    }
+                  }
+                }
+              }
+            }
+            h5 {
+              font-size: 15px !important;
+            }
           }
         }
 
-        .carousel {
-          grid-auto-columns: 100%;
-          gap: 50px;
+        .class {
+          &-details {
+            &-el {
+              margin: 15px 0 !important;
 
-          .course {
-            &-img {
-              img {
-                width: 300px;
-                height: 300px;
+              &-div {
+                padding: 0 4px !important;
+
+                .class-bx {
+                  h3 {
+                    font-size: 13px !important;
+                  }
+                  &-hd {
+                    a {
+                      margin: 0 !important;
+                      font-size: 15px !important;
+                    }
+                  }
+                }
               }
             }
+          }
+          h5 {
+            font-size: 15px !important;
           }
         }
       }
@@ -793,7 +875,8 @@
   }
 
   .courses-tutor {
-    height: 500px !important;
+    height: fit-content !important;
+    padding: 100px 0 !important;
 
     .courses-container {
       a {
@@ -805,33 +888,46 @@
         text-transform: uppercase;
       }
 
-      .arrow {
-        margin-left: 10px !important;
+      h4 {
+        margin-bottom: 10px !important;
       }
 
-      .student-div {
-        img {
-          width: 95% !important;
-        }
-      }
-      .carousel-control-prev {
-        .carousel-control-prev-icon {
-          width: 30px !important;
-          height: 30px !important;
+      .student {
+        &-el {
+          padding: 40px !important;
+          margin: 0 !important;
         }
       }
 
-      .carousel-control-next {
-        .carousel-control-next-icon {
-          width: 30px !important;
-          height: 30px !important;
-        }
-      }
+      // .arrow {
+      //   margin-left: 10px !important;
+      // }
+
+      // .student-div {
+      //   img {
+      //     width: 95% !important;
+      //   }
+      // }
+      // .carousel-control-prev {
+      //   .carousel-control-prev-icon {
+      //     width: 30px !important;
+      //     height: 30px !important;
+      //   }
+      // }
+
+      // .carousel-control-next {
+      //   .carousel-control-next-icon {
+      //     width: 30px !important;
+      //     height: 30px !important;
+      //   }
+      // }
     }
   }
 
   .info-form {
     background: none;
+    padding: 100px 0 !important;
+    height: fit-content !important;
 
     img {
       display: none !important;
@@ -839,6 +935,10 @@
 
     &-container {
       padding: 0 25px !important;
+
+      .kinder-info {
+        display: none !important;
+      }
 
       .kinder-form {
         position: inherit;
@@ -867,6 +967,20 @@
 
         select {
           font-size: 13px !important;
+        }
+      }
+
+      .test-div {
+        position: inherit !important;
+        margin-bottom: 50px !important;
+
+        .test-link {
+          width: 350px !important;
+          margin-bottom: 10px !important;
+
+          &-1 {
+            width: 350px !important;
+          }
         }
       }
     }
@@ -1247,7 +1361,7 @@
 
   .our-tutors {
     height: fit-content;
-    padding: 30px 0;
+    padding: 50px 0;
 
     &-container {
       padding: 0 25px;
@@ -1303,6 +1417,15 @@
                 font-size: 13px;
               }
             }
+
+            &-detail {
+              a {
+                margin: 0 !important;
+                line-height: normal;
+                width: auto !important;
+                height: auto !important;
+              }
+            }
           }
         }
 
@@ -1318,12 +1441,24 @@
           }
         }
       }
+
+      a {
+        margin: 0 !important;
+        font-size: 14px !important;
+
+        line-height: normal;
+        margin: 50px 100px !important;
+
+        i {
+          margin-left: 20px !important;
+        }
+      }
     }
   }
 
   .our-tutors-tutor {
     height: fit-content !important;
-    padding: 100px 0 0 0 !important;
+    padding: 100px 0 !important;
 
     .img-decor {
       height: 50% !important;
@@ -1389,6 +1524,7 @@
     }
 
     .kinder-tutors {
+      margin: 0 !important;
       h2 {
         margin-top: 20px !important;
       }
@@ -1401,7 +1537,7 @@
           &-img {
             margin-bottom: 50px !important;
             img {
-              width: 85% !important;
+              width: 70% !important;
             }
           }
         }
@@ -1433,14 +1569,14 @@
 
         .p-tutor {
           font-size: 17px !important;
-          margin-top: 30px !important;
+          margin: 30px 0 !important;
           width: 100% !important;
         }
 
         .fee-div {
-          margin-top: 30px !important;
+          margin: 30px 0 !important;
           .fee {
-            width: 100% !important;
+            width: 80% !important;
           }
         }
 
@@ -1467,7 +1603,7 @@
   }
 
   .our-tutors-course-2 {
-    padding: 50px 0 !important;
+    padding: 100px 0 !important;
     min-height: fit-content !important;
     .img-decor {
       width: 90% !important;
@@ -1491,14 +1627,14 @@
 
         .p-tutor {
           font-size: 17px !important;
-          margin-top: 30px !important;
+          margin: 30px 0 !important;
           width: 100% !important;
         }
 
         .fee-div {
-          margin-top: 30px !important;
+          margin: 30px 0 !important;
           .fee {
-            width: 100% !important;
+            width: 80% !important;
           }
         }
 
@@ -1642,6 +1778,7 @@
 
         h1 {
           font-size: 30px !important;
+          width: 100% !important;
         }
 
         p {
@@ -1702,10 +1839,11 @@
   }
 
   .courses {
-    height: 650px;
+    height: fit-content !important;
+    padding: 100px 0 !important;
 
     &-img {
-      width: 50%;
+      width: 40%;
     }
 
     &-container {
@@ -1721,7 +1859,7 @@
         z-index: 99;
         font-size: 15px !important;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px !important;
       }
 
       a {
@@ -1729,28 +1867,64 @@
         font-size: 15px;
       }
 
-      .course-wrapper {
-        height: 300px;
+      // .course-wrapper {
+      //   height: 300px;
 
-        i {
-          &:first-child {
-            left: -15px;
-          }
+      //   i {
+      //     &:first-child {
+      //       left: -15px;
+      //     }
 
-          &:last-child {
-            right: -15px;
+      //     &:last-child {
+      //       right: -15px;
+      //     }
+      //   }
+
+      //   .carousel {
+      //     grid-auto-columns: 100%;
+      //     gap: 50px;
+
+      //     .course {
+      //       &-img {
+      //         img {
+      //           width: 300px;
+      //           height: 300px;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+
+      .content {
+        &-all {
+          .combo {
+            margin-bottom: 30px !important;
+            &-details {
+              &-el {
+                .course {
+                  &-el {
+                    width: 90% !important;
+                    height: 190px !important;
+
+                    h2 {
+                      font-size: 30px !important;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
 
-        .carousel {
-          grid-auto-columns: 100%;
-          gap: 50px;
-
-          .course {
-            &-img {
-              img {
-                width: 300px;
-                height: 300px;
+        .class {
+          &-details {
+            &-el {
+              .class-bx {
+                &-hd {
+                  a {
+                    margin: 0 !important;
+                  }
+                }
               }
             }
           }
@@ -1800,14 +1974,20 @@
 
   .info-form {
     background: none;
+    height: fit-content !important;
+    padding: 100px 0 !important;
 
     img {
       display: none !important;
     }
 
     &-container {
+      .kinder-info {
+        display: none !important;
+      }
       .kinder-form {
         width: 65% !important;
+        position: inherit !important;
 
         h4 {
           font-size: 25px !important;
@@ -1832,6 +2012,15 @@
 
         select {
           font-size: 15px !important;
+        }
+      }
+
+      .test-div {
+        position: inherit !important;
+        margin-bottom: 40px !important;
+
+        .test-link {
+          margin-bottom: 20px !important;
         }
       }
     }
@@ -1950,7 +2139,8 @@
   .navbar {
     .nav-link {
       &-content {
-        font-size: 15px;
+        font-size: 13px;
+
         @include transition-ease;
 
         &:hover {
@@ -2266,6 +2456,10 @@
           }
         }
       }
+
+      a {
+        margin: 50px 150px !important;
+      }
     }
   }
 
@@ -2314,7 +2508,7 @@
         }
 
         .img-fix {
-          width: 50% !important;
+          width: 60% !important;
         }
 
         &-dt {
@@ -2347,6 +2541,8 @@
     }
 
     .kinder-tutors {
+      margin: 0 !important;
+      margin-top: 100px !important;
       h2 {
         margin-top: 20px !important;
       }
@@ -2359,7 +2555,7 @@
           &-img {
             margin-bottom: 50px !important;
             img {
-              width: 85% !important;
+              width: 60% !important;
             }
           }
         }
@@ -2390,15 +2586,16 @@
         }
 
         .p-tutor {
-          font-size: 17px !important;
-          margin-top: 30px !important;
+          font-size: 20px !important;
+          margin: 30px 0 !important;
           width: 100% !important;
         }
 
         .fee-div {
-          margin-top: 30px !important;
+          z-index: 99;
+          margin: 30px 0 !important;
           .fee {
-            width: 100% !important;
+            width: 80% !important;
           }
         }
 
@@ -2425,7 +2622,7 @@
   }
 
   .our-tutors-course-2 {
-    padding: 50px 0 !important;
+    padding: 100px 0 !important;
     min-height: fit-content !important;
     .img-decor {
       width: 90% !important;
@@ -2448,15 +2645,15 @@
         }
 
         .p-tutor {
-          font-size: 17px !important;
-          margin-top: 30px !important;
+          font-size: 20px !important;
+          margin: 30px 0 !important;
           width: 100% !important;
         }
 
         .fee-div {
-          margin-top: 30px !important;
+          margin: 30px 0 !important;
           .fee {
-            width: 100% !important;
+            width: 80% !important;
           }
         }
 
@@ -2630,7 +2827,7 @@
         p {
           position: inherit;
           font-size: 15px !important;
-          top: 220px !important;
+          top: 280px !important;
           width: 350px !important;
           margin-bottom: 30px !important;
           margin-left: 50px !important;
@@ -2639,7 +2836,7 @@
         .test-div {
           position: inherit;
           right: 0 !important;
-          top: 220px !important;
+          top: 290px !important;
         }
 
         .test-link {
@@ -2661,7 +2858,8 @@
   }
 
   .courses {
-    height: 650px;
+    height: fit-content !important;
+    padding: 100px 0 !important;
 
     &-img {
       width: 50%;
@@ -2680,42 +2878,107 @@
         z-index: 99;
         font-size: 15px !important;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px !important;
       }
 
-      a {
-        margin: 50px 270px 0 270px !important;
-        font-size: 15px;
-      }
+      // a {
+      //   margin: 50px 270px 0 270px !important;
+      //   font-size: 15px;
+      // }
 
-      .course-wrapper {
-        height: 300px;
-        z-index: 999;
-        margin-top: 20px !important;
+      // .course-wrapper {
+      //   height: 300px;
+      //   z-index: 999;
+      //   margin-top: 20px !important;
 
-        i {
-          &:first-child {
-            left: -15px;
-          }
+      //   i {
+      //     &:first-child {
+      //       left: -15px;
+      //     }
 
-          &:last-child {
-            right: -15px;
-          }
-        }
+      //     &:last-child {
+      //       right: -15px;
+      //     }
+      //   }
 
-        .carousel {
-          grid-auto-columns: 30%;
-          gap: 40px;
+      //   .carousel {
+      //     grid-auto-columns: 30%;
+      //     gap: 40px;
 
-          .course {
-            &-img {
-              img {
-                width: 275px;
-                height: 275px;
+      //     .course {
+      //       &-img {
+      //         img {
+      //           width: 275px;
+      //           height: 275px;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+
+      .content {
+        &-all {
+          .combo {
+            &-details {
+              &-header {
+                h2 {
+                  font-size: 25px !important;
+                }
               }
+              &-el {
+                .course {
+                  &-el {
+                    width: 95%;
+                    height: 150px !important;
+                    h2 {
+                      font-size: 24px !important;
+                    }
+                  }
+                }
+              }
+            }
+            h5 {
+              font-size: 18px !important;
             }
           }
         }
+
+        .class {
+          &-details {
+            padding: 7px 8px !important;
+            &-el {
+              &-div {
+                padding: 0 3px !important;
+
+                .class-bx {
+                  h3 {
+                    font-size: 18px !important;
+                  }
+
+                  &-hd {
+                    a {
+                      font-size: 18px !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          h5 {
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .courses-tutor {
+    height: fit-content !important;
+    padding: 200px 0 !important;
+    .courses-container {
+      a {
+        margin: 100px 350px 0 350px !important;
       }
     }
   }
@@ -2729,6 +2992,36 @@
     &-container {
       .kinder-form {
         left: 30px !important;
+      }
+      .kinder-info {
+        right: 3% !important;
+        bottom: 35%;
+
+        h5 {
+          font-size: 20px !important;
+        }
+
+        li {
+          a {
+            font-size: 18px !important;
+          }
+          i {
+            font-size: 18px !important;
+          }
+        }
+      }
+      .test-div {
+        right: 22% !important;
+        bottom: 35% !important;
+        .test-link {
+          width: 300px !important;
+          font-size: 18px !important;
+
+          &-1 {
+            font-size: 18px !important;
+            width: 300px !important;
+          }
+        }
       }
     }
   }

@@ -14,7 +14,7 @@ import { scrollToSection } from "./utils/scroll";
         },
         {
             id: 1,
-            title: 'Giá cả phải chăng',
+            title: 'Chi phí hợp lý',
             description: 'Chúng mình luôn cố gắng hỗ trợ hết mình để các bạn sinh viên có thể học IELTS với giá thấp hơn thị trường nhưng chất lượng đảm bảo và uy tín.',
             thumbnail: 'https://firebasestorage.googleapis.com/v0/b/testform-b2a34.appspot.com/o/sb-icon-2.png?alt=media&token=16856c5c-5dd9-4f2c-9ca9-96b2975eb259'
         },
@@ -28,7 +28,7 @@ import { scrollToSection } from "./utils/scroll";
 
 
     renderSubBannerList('subBannerList', subBannerList);
-    dragableCarousel();
+    //dragableCarousel();
     formSubmit();
     scrollToSection();
 })();

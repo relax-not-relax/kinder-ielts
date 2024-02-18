@@ -1,5 +1,5 @@
 .big-banner {
-  background: url("../images/tutor-bnn-1.png") no-repeat;
+  background: url("../images/tutor-bnn-1-new.png") no-repeat;
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -162,12 +162,20 @@
 
 .our-tutors {
   width: 100%;
-  height: 900px;
+  height: 1000px;
   background: var(
     --bg-blur,
     linear-gradient(103deg, #e2ffe1 -2.42%, #fff8cf 114.41%)
   );
+  position: relative;
   //overflow: hidden;
+  .decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 33%;
+  }
 
   &-container {
     height: 100%;
@@ -306,12 +314,30 @@
         top: 160px;
       }
     }
+
+    a {
+      width: 100%;
+      margin: 50px 365px 0px 365px;
+      height: 50px;
+      background: $header-color;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      i {
+        margin-left: 20px;
+      }
+    }
   }
 }
 
 .test-ielts {
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   background: #fffced;
 
   &-container {
@@ -324,6 +350,8 @@
         font-weight: 700;
         line-height: normal;
         color: $header-color;
+        width: 450px;
+        text-transform: capitalize;
       }
 
       p {
@@ -333,8 +361,8 @@
       }
 
       img {
-        width: 432px;
-        height: 433px;
+        width: 476px;
+        height: 500px;
       }
     }
 
@@ -346,8 +374,8 @@
         position: absolute;
         bottom: 350px;
         right: 50px;
-        width: 480px;
-        height: 480px;
+        width: 462px;
+        height: 500px;
       }
 
       p {
@@ -365,17 +393,17 @@
         height: 50px;
         font-size: 20px;
         font-weight: 600;
-        border: 2px solid $primary-button-color;
+        border: 2px solid $header-color;
         border-radius: 30px;
         @include transition-ease;
 
         a {
-          color: $primary-button-color;
+          color: $header-color;
           text-decoration: none;
         }
 
         &:hover {
-          background: $primary-button-color;
+          background: $header-color;
           cursor: pointer;
 
           a {
@@ -391,23 +419,14 @@
         height: 50px;
         font-size: 20px;
         font-weight: 600;
-        border: 2px solid $primary-button-color;
-        background: $primary-button-color;
+        border: 2px solid #ffe85b;
+        background: #ffe85b;
         border-radius: 30px;
         @include transition-ease;
 
         a {
-          color: #fff;
+          color: $header-color;
           text-decoration: none;
-        }
-
-        &:hover {
-          background: transparent;
-          cursor: pointer;
-
-          a {
-            color: $primary-button-color;
-          }
         }
       }
 
@@ -422,7 +441,7 @@
 
 .courses {
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   background: $primary-section-color;
   position: relative;
 
@@ -436,8 +455,156 @@
 
   &-container {
     height: 100%;
+
     z-index: 3;
     padding: 0 35px;
+
+    h4 {
+      margin-bottom: 70px !important;
+    }
+
+    .content {
+      width: 100%;
+
+      &-all {
+        width: 100%;
+        //height: 100%;
+
+        .combo {
+          height: fit-content;
+          padding: 40px 25px 15px 25px;
+          background: #fdf02d;
+          border-radius: 10px;
+
+          &-details {
+            width: 100%;
+            height: auto;
+            padding: 25px;
+            margin-bottom: 15px;
+            background: url("../images/course-bg.png") no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            border: solid 1px $header-color;
+
+            &-header {
+              width: 100%;
+              height: auto;
+              background: $header-color;
+              padding: 15px;
+              margin-bottom: 20px;
+              border-radius: 10px;
+
+              h2 {
+                margin: 0 !important;
+                font-size: 35px;
+                color: #fdf02d;
+                font-weight: 700;
+              }
+            }
+
+            &-el {
+              width: 100%;
+              height: auto;
+              margin: 0;
+
+              .course {
+                padding: 0 !important;
+                &-el {
+                  width: 220px;
+                  height: 220px;
+                  background: $primary-section-color;
+                  padding: 7px;
+                  border: solid 1px $header-color;
+                  border-radius: 10px;
+
+                  h2 {
+                    height: 100%;
+                    text-align: center;
+                    margin: 0;
+                    font-size: 35px;
+                    font-weight: 900;
+                    -webkit-text-stroke: 2px $header-color;
+                    color: #fdf02d;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+            }
+          }
+
+          h5 {
+            font-style: italic;
+            color: #896114;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .class {
+        width: 100%;
+        height: fit-content;
+        padding: 40px 25px 15px 25px;
+        background: #fdf02d;
+        border-radius: 10px;
+
+        &-details {
+          width: 100%;
+          height: auto;
+          margin-bottom: 15px;
+          background: #fff;
+          padding: 7px 15px;
+          border-radius: 10px;
+          border: solid 1px $header-color;
+
+          &-el {
+            width: 100%;
+            height: auto;
+            margin: 30px 0;
+
+            .class-bx {
+              width: 100%;
+              height: 60px;
+              background: #fdf02d;
+              border-radius: 10px;
+              border: solid 1px $header-color;
+
+              h3 {
+                margin: 0;
+                height: 100%;
+                text-align: center;
+                font-size: 25px;
+                font-weight: 600;
+                color: $header-color;
+              }
+
+              &-hd {
+                width: 100%;
+                height: 60px;
+                background: $header-color;
+                border-radius: 10px;
+
+                a {
+                  margin: 0;
+                  height: 100%;
+                  text-align: center;
+                  font-size: 25px;
+                  font-weight: 600;
+                  color: #fdf02d;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+
+        h5 {
+          font-style: italic;
+          color: #896114;
+          font-weight: 500;
+        }
+      }
+    }
 
     h1 {
       color: $header-color;
@@ -456,107 +623,6 @@
       line-height: normal;
       text-transform: capitalize;
       margin-bottom: 120px;
-    }
-
-    a {
-      width: 100%;
-      margin: 80px 500px 0 500px;
-      height: 46px;
-      background: $primary-button-color;
-      border-radius: 30px;
-      text-decoration: none;
-      color: #fff;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      text-transform: uppercase;
-      @include transition-ease;
-
-      &:hover {
-        margin: 80px 490px 0 490px;
-      }
-    }
-
-    .course-wrapper {
-      width: 100%;
-      height: 370px;
-      max-width: 1320px;
-      position: relative;
-
-      i {
-        height: 50px;
-        width: 50px;
-        background: #fff;
-        text-align: center;
-        line-height: 50px;
-        border-radius: 50%;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        font-size: 1.25rem;
-        transform: translateY(-50%);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-        z-index: 10;
-        color: $primary-button-color;
-        font-weight: 600;
-
-        &:first-child {
-          left: -22px;
-        }
-
-        &:last-child {
-          right: -22px;
-        }
-      }
-
-      .carousel {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: calc((100% / 3) - 10px);
-        padding-left: 0;
-        gap: 16px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: 0;
-        scroll-behavior: smooth;
-
-        &::-webkit-scrollbar {
-          display: none;
-        }
-
-        &.dragging {
-          scroll-snap-type: none;
-          scroll-behavior: auto;
-
-          .course {
-            cursor: grab;
-            user-select: none;
-          }
-        }
-
-        &.no-transition {
-          scroll-behavior: auto;
-        }
-
-        .course {
-          list-style: none;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          scroll-snap-align: start;
-
-          &-img {
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-
-            img {
-              width: 370px;
-              height: 370px;
-              object-fit: cover;
-            }
-          }
-        }
-      }
     }
   }
 }
@@ -579,7 +645,7 @@
       position: absolute;
       bottom: 5%;
       left: 18%;
-      background: #fffced;
+      background: #fdf02d;
       border-radius: 10px;
       padding: 40px;
 
@@ -618,7 +684,49 @@
     img {
       position: absolute;
       bottom: 0;
-      right: 12%;
+      right: 18%;
+      width: 35%;
+    }
+
+    .kinder-info {
+      position: absolute;
+      right: 15%;
+      bottom: 50%;
+      h5 {
+        color: #727272;
+        font-size: 27px;
+      }
+
+      ul {
+        padding-left: 0 !important;
+
+        .d-flex {
+          gap: 10px !important;
+        }
+      }
+
+      li {
+        list-style: none;
+        color: #fff;
+
+        a {
+          text-decoration: none;
+          font-size: 25px !important;
+          color: #000;
+          @include transition-ease;
+          font-weight: 500;
+
+          &:hover {
+            color: $nav-secondary-color;
+          }
+        }
+        i {
+          color: #000;
+          margin-right: 5px;
+          font-size: 25px;
+          font-weight: 500;
+        }
+      }
     }
   }
 }
@@ -772,7 +880,7 @@ footer {
   .kinder-copyright {
     height: 50px;
     background: #111;
-    border-top: 2px solid #1B1B1B;
+    border-top: 2px solid #1b1b1b;
 
     span {
       color: #727272;

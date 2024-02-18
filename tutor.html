@@ -39,7 +39,10 @@
 
     <!-- Template for sub-banner -->
     <template id="subBannerTemplate">
-      <div class="card ms-3 me-3 col-md-12" style="background: #fff8d0">
+      <div
+        class="card ms-3 me-3 col-md-12"
+        style="background: rgba(253, 240, 45, 0.69)"
+      >
         <img
           data-id="thumbnail"
           src="./images/sb-icon-1.png"
@@ -110,16 +113,16 @@
                   aria-current="page"
                   href="#"
                 >
-                  <span class="nav-link-content">About Us</span>
+                  <span class="nav-link-content">Về Kinder</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active ps-4 pe-4 nav-link-content"
+                  class="nav-link active ps-4 pe-4"
                   aria-current="page"
                   href="#"
                 >
-                  <span class="nav-link-content">Our Tutors</span>
+                  <span class="nav-link-content">Giảng Viên</span>
                 </a>
               </li>
               <li class="nav-item dropdown">
@@ -130,9 +133,12 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span class="nav-link-content">Our Courses</span>
+                  <span class="nav-link-content">Các Khóa Học</span>
                 </a>
                 <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="preIelts.html">Pre-IELTS</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="hatgiong.html">Hạt Giống</a>
                   </li>
@@ -146,7 +152,10 @@
                     <a class="dropdown-item" href="la.html">Lá</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="bon.html">Bón và Hạt Core</a>
+                    <a class="dropdown-item" href="bon.html">Bón</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hatcore.html">Hạt Core</a>
                   </li>
                 </ul>
               </li>
@@ -154,9 +163,9 @@
                 <a
                   class="nav-link active ps-4 pe-4"
                   aria-current="page"
-                  href="#"
+                  href="bangVang.html"
                 >
-                  <span class="nav-link-content">Blog</span>
+                  <span class="nav-link-content">Bảng Vàng</span>
                 </a>
               </li>
               <li class="nav-item" style="margin-right: 50px">
@@ -165,7 +174,7 @@
                   aria-current="page"
                   href="#"
                 >
-                  <span class="nav-link-content">Contact</span>
+                  <span class="nav-link-content">Liên Hệ</span>
                 </a>
               </li>
               <li class="nav-item nav-item-btn ps-4 pe-4 text-center">
@@ -219,12 +228,12 @@
           class="container sub-banner-container d-flex flex-wrap align-content-center"
         >
           <h4 class="col-md-12 d-flex justify-content-center">
-            What we believe
+            Tại Kinder IELTS
           </h4>
           <h2
             class="col-md-12 d-flex justify-content-center sub-banner-custom-tutor"
           >
-            Teaching Philosophy at Kinder IELTS
+            Các khóa học chú trọng vào...
           </h2>
 
           <div id="subBannerListTutor" class="card-group"></div>
@@ -251,7 +260,7 @@
                     <div class="tutor-carousel__item-img fix">
                       <img
                         class="img-fix"
-                        src="./images/tutor-carou-1.png"
+                        src="./images/tutor-carou-1-new.png"
                         alt=""
                       />
                     </div>
@@ -350,7 +359,7 @@
                 <div class="carousel-item">
                   <div class="d-flex tutor-carousel__item">
                     <div class="tutor-carousel__item-img">
-                      <img src="./images/tutor-carou-2.png" alt="" />
+                      <img src="./images/tutor-carou-2-new.png" alt="" />
                     </div>
 
                     <div class="tutor-carousel__item-dt">
@@ -503,7 +512,10 @@
               <div class="row g-2 row-sm">
                 <div class="col tutor">
                   <div class="tutor-img">
-                    <img src="./images/tutor-1.png" alt="Kinder IELTS gia sư" />
+                    <img
+                      src="./images/tutor-1-new.png"
+                      alt="Kinder IELTS gia sư"
+                    />
                   </div>
                 </div>
                 <div class="col tutor">
@@ -511,9 +523,16 @@
                     <img src="./images/tutor-2.png" alt="Kinder IELTS gia sư" />
                   </div>
                 </div>
+              </div>
+              <div class="row g-2 row-sm kd-2">
                 <div class="col tutor">
                   <div class="tutor-img">
                     <img src="./images/tutor-3.png" alt="Kinder IELTS gia sư" />
+                  </div>
+                </div>
+                <div class="col tutor">
+                  <div class="tutor-img">
+                    <img src="./images/tutor-4.png" alt="Kinder IELTS gia sư" />
                   </div>
                 </div>
               </div>
@@ -555,7 +574,7 @@
             tại Kinder IELTS
           </h4>
 
-          <div
+          <!-- <div
             id="carouselExampleAutoplaying1"
             class="carousel slide student-div"
             data-bs-ride="carousel"
@@ -680,6 +699,31 @@
                 <span class="visually-hidden">Next</span>
               </div>
             </button>
+          </div> -->
+
+          <div class="row student g-3">
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-4.png"
+                alt=""
+                srcset=""
+                class="d-flex align-content-center"
+              />
+            </div>
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-6.png"
+                alt=""
+                class="d-flex align-content-center"
+              />
+            </div>
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-5.png"
+                alt=""
+                class="d-flex align-content-center"
+              />
+            </div>
           </div>
 
           <a class="d-flex justify-content-center align-items-center" href=""
@@ -691,9 +735,29 @@
       <!-- Form -->
       <section id="sct-info-form" class="col-md-12 info-form">
         <div
-          class="container info-form-container d-flex flex-wrap align-content-center"
+          class="container info-form-container d-flex flex-wrap align-content-center justify-content-center"
         >
-          <img src="./images/form-material.png" alt="" />
+          <img src="./images/form-material-2.png" alt="" />
+
+          <div
+            class="test-div d-flex flex-wrap align-content-center justify-content-center"
+          >
+            <div
+              class="test-link d-flex flex-wrap align-content-center justify-content-center"
+            >
+              <a href="https://forms.gle/FaJk7BK26ZfRErMRA" target="_blank"
+                >Test khả năng tiếng Anh</a
+              >
+            </div>
+
+            <div
+              class="test-link-1 d-flex flex-wrap align-content-center justify-content-center"
+            >
+              <a href="https://forms.gle/1BScrVwy9vJKGTmVA" target="_blank"
+                >Test khả năng Tiếng Anh và IELTS</a
+              >
+            </div>
+          </div>
 
           <div class="kinder-form d-flex flex-wrap align-content-center">
             <form
@@ -928,6 +992,9 @@
             <h5 class="pb-3">Thông tin khóa học</h5>
             <ul>
               <li>
+                <a href="preIelts.html">Khóa học Pre-IELTS</a>
+              </li>
+              <li>
                 <a href="hatgiong.html">Khóa học Hạt giống</a>
               </li>
               <li>
@@ -940,7 +1007,10 @@
                 <a href="la.html">Khóa học Lá</a>
               </li>
               <li>
-                <a href="bon.html">Khóa học Bón & Hạt Core</a>
+                <a href="bon.html">Khóa học Bón</a>
+              </li>
+              <li>
+                <a href="hatcore.html">Khóa học Hạt Core</a>
               </li>
             </ul>
           </div>

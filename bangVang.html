@@ -28,14 +28,34 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Kinder IELTS's Lá</title>
+    <title>Kinder IELTS's Hạt Giống</title>
   </head>
   <body>
-    <div id="load-wrapper-la" style="display: none">
+    <div id="load-wrapper-hatgiong" style="display: none">
       <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
+
+    <!-- Template for sub-banner -->
+    <template id="subBannerTemplate">
+      <div
+        class="card ms-3 me-3 col-md-12"
+        style="background: rgba(253, 240, 45, 0.69)"
+      >
+        <img
+          data-id="thumbnail"
+          src="./images/sb-icon-1.png"
+          class=""
+          alt="chuẩn bị hành trang"
+          width="90"
+        />
+        <div class="card-body">
+          <h5 data-id="title" class="card-title mb-3">Card title</h5>
+          <p data-id="description" class="card-text">Card description</p>
+        </div>
+      </div>
+    </template>
 
     <!-- Navbar -->
     <nav
@@ -203,173 +223,25 @@
       </section>
 
       <!-- Sub banner -->
-      <!-- <section class="col-md-12 sub-banner-course">
+      <section class="col-md-12 sub-banner pt-5 pb-5">
         <div
-          class="container sub-banner-course-container d-flex flex-wrap align-content-center"
+          class="container sub-banner-container d-flex flex-wrap align-content-center"
         >
-          <div class="d-flex tutor-sub-div">
-            <div class="tutor-sub-div-img">
-              <img src="./images/tutor-carou-1.png" alt="" />
-            </div>
+          <h4 class="col-md-12 d-flex justify-content-center">
+            Tại Kinder IELTS
+          </h4>
+          <h2
+            class="col-md-12 d-flex justify-content-center sub-banner-custom-tutor"
+          >
+            Các khóa học chú trọng vào...
+          </h2>
 
-            <div class="tutor-sub-div-dt">
-              <h3>tutor Việt Phát</h3>
-              <ul>
-                <li>
-                  Tốt nghiệp ĐH Western Sydney Vietnam, ngành Applied Finance
-                </li>
-                <li>Chứng chỉ giảng dạy tiếng Anh TESOL</li>
-                <li>Top 10 - Local Finalist P&G CEO Challenge 2022</li>
-                <li>Kinh nghiệm gia sư cho 100+ học viên</li>
-                <li>Đạt IELTS 8.0 lần thi đầu năm 2021</li>
-              </ul>
-              <div class="band">
-                <div class="md-4">
-                  <div class="band-div md-12">
-                    <div class="md-8" style="width: 100px">
-                      <p>Reading</p>
-                    </div>
-                    <div
-                      class="md-4"
-                      style="
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        width: 70px;
-                      "
-                    >
-                      <p>9.0</p>
-                    </div>
-                  </div>
-                  <div class="band-div md-12" style="margin-top: 10px">
-                    <div class="md-8" style="width: 100px">
-                      <p>Listening</p>
-                    </div>
-                    <div
-                      class="md-4"
-                      style="
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        width: 70px;
-                      "
-                    >
-                      <p>8.0</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="md-4" style="margin-left: 10px">
-                  <div class="band-div md-12">
-                    <div class="md-8" style="width: 100px">
-                      <p>Writing</p>
-                    </div>
-                    <div
-                      class="md-4"
-                      style="
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        width: 70px;
-                      "
-                    >
-                      <p>7.0</p>
-                    </div>
-                  </div>
-                  <div class="band-div md-12" style="margin-top: 10px">
-                    <div class="md-8" style="width: 100px">
-                      <p>Speaking</p>
-                    </div>
-                    <div
-                      class="md-4"
-                      style="
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        width: 70px;
-                      "
-                    >
-                      <p>8.0</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="md-4 overall">
-                  <p>8.0</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- Out tutors -->
-      <section class="col-md-12 our-tutors-course-2">
-        <img src="./images/decor-5.png" alt="" class="img-decor" />
-        <img src="./images/decor-6.png" alt="" class="img-decor-1" />
-
-        <div
-          class="container our-tutors-course-2-container d-flex flex-wrap align-content-center our-tutors-tutor-ctn"
-        >
-          <div class="our-tutors-course-2-container-text">
-            <h2 class="h2-tutor">LỚP IELTS NÂNG CAO</h2>
-            <h2 class="h2-tutor-1">LÁ (6.0 - 6.5+)</h2>
-            <p class="p-tutor">
-              - Lớp học
-              <span> giải đề chuyên sâu Writing và Speaking </span>
-              giúp học viên sẵn sàng tham gia kì thi IELTS.
-              <br />
-              - Học viên được tiếp cận các đề thi Nói và Viết với
-              <span> độ khó sát với đề thi thật. </span>
-            </p>
-            <div class="fee-div">
-              <img
-                src="./images/course-fee-4-new.png"
-                alt="Học phí Kinder IELTS"
-                class="fee"
-              />
-            </div>
-            <div class="step">
-              <h4 class="p-step">Các kỹ năng được học trong lớp bao gồm:</h4>
-
-              <ul>
-                <li>
-                  Giải đề
-                  <span>Viết</span> (các dạng đề và hướng tiếp cận hiệu quả cho
-                  band 7)
-                </li>
-                <li>
-                  Giải đề
-                  <span>Nói</span> (các dạng đề và cách tư duy hiệu quả cho band
-                  7)
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Test -->
-      <section class="col-md-12 test-ielts-tutor">
-        <div
-          class="container test-ielts-container d-flex flex-wrap align-content-center"
-        >
-          <div class="certificate-btn row">
-            <div class="col-md-3 col-sm-3 decor">
-              <i class="uil uil-angle-left-b"></i>
-            </div>
-            <div class="col-md-6 col-sm-6 certificate-btn-button">
-              <button>Đăng ký ngay</button>
-            </div>
-            <div class="col-md-3 col-sm-3 decor-1">
-              <i class="uil uil-angle-right-b"></i>
-            </div>
-          </div>
+          <div id="subBannerListTutor" class="card-group"></div>
         </div>
       </section>
 
       <!-- Course -->
-      <section id="sct-course" class="col-md-12 courses-tutor">
+      <section id="sct-course" class="col-md-12 courses-tutor-1">
         <img class="courses-img" src="./images/decor-3.png" alt="" />
 
         <div
@@ -527,16 +399,87 @@
             </div>
             <div class="col-md-4 student-el">
               <img
-                src="./images/hocvien-5.png"
+                src="./images/hocvien-7.png"
                 alt=""
                 class="d-flex align-content-center"
               />
             </div>
           </div>
 
-          <a class="d-flex justify-content-center align-items-center" href=""
-            >Xem tất cả <i class="uil uil-angle-right arrow"></i>
-          </a>
+          <div class="row student g-3">
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-5.png"
+                alt=""
+                srcset=""
+                class="d-flex align-content-center"
+              />
+            </div>
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-8.png"
+                alt=""
+                class="d-flex align-content-center"
+              />
+            </div>
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-9.png"
+                alt=""
+                class="d-flex align-content-center"
+              />
+            </div>
+          </div>
+
+          <div class="row student g-3">
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-10.png"
+                alt=""
+                srcset=""
+                class="d-flex align-content-center"
+              />
+            </div>
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-11.png"
+                alt=""
+                class="d-flex align-content-center"
+              />
+            </div>
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-12.png"
+                alt=""
+                class="d-flex align-content-center"
+              />
+            </div>
+          </div>
+
+          <div class="row student g-3">
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-13.png"
+                alt=""
+                srcset=""
+                class="d-flex align-content-center"
+              />
+            </div>
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-14.png"
+                alt=""
+                class="d-flex align-content-center"
+              />
+            </div>
+            <div class="col-md-4 student-el">
+              <img
+                src="./images/hocvien-15.png"
+                alt=""
+                class="d-flex align-content-center"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -721,7 +664,7 @@
       </section>
     </main>
 
-    <div class="modal" id="myModalLa">
+    <div class="modal" id="myModalBangVang">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content custom-modal">
           <div
@@ -800,9 +743,6 @@
             <h5 class="pb-3">Thông tin khóa học</h5>
             <ul>
               <li>
-                <a href="preIelts.html">Khóa học Pre-IELTS</a>
-              </li>
-              <li>
                 <a href="hatgiong.html">Khóa học Hạt giống</a>
               </li>
               <li>
@@ -812,7 +752,7 @@
                 <a href="choi.html">Khóa học Chồi</a>
               </li>
               <li>
-                <a href="#">Khóa học Lá</a>
+                <a href="la.html">Khóa học Lá</a>
               </li>
               <li>
                 <a href="bon.html">Khóa học Bón</a>
@@ -841,6 +781,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./js/main.js"></script>
-    <script type="module" src="./js/la.js"></script>
+    <script type="module" src="./js/bangVang.js"></script>
   </body>
 </html>
