@@ -315,16 +315,18 @@
         justify-content: center !important;
         align-items: center !important;
 
-        button {
-          width: 100% !important;
-          height: 50px !important;
-          background: $header-color !important;
-          border-radius: 30px !important;
-          border: 0 !important;
-          color: #fdf02d !important;
+        background: $header-color;
+        border-radius: 30px;
+        a {
+          text-decoration: none;
+          font-size: 25px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fdf02d;
+          font-weight: 500;
           text-transform: uppercase;
-          font-size: 20px !important;
-          font-weight: 700 !important;
         }
       }
     }

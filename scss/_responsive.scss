@@ -3026,3 +3026,546 @@
     }
   }
 }
+
+@include media-xxl {
+  .navbar {
+    .container {
+      min-width: 1650px !important;
+
+      .navbar-brand {
+        img {
+          width: 300px !important;
+          height: auto !important;
+        }
+      }
+    }
+    .nav-link {
+      &-content {
+        font-size: 30px;
+
+        @include transition-ease;
+
+        &:hover {
+          color: $nav-secondary-color;
+        }
+
+        &-btn {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .nav-item {
+      &-btn {
+        border-radius: 20px;
+        padding-bottom: 3px !important;
+      }
+
+      .dropdown-menu {
+        width: 230px !important;
+        .dropdown-item {
+          font-size: 30px !important;
+        }
+      }
+    }
+  }
+
+  .big-banner {
+    height: 50vh !important;
+
+    &-container {
+      min-width: 1600px !important;
+      .banner-header {
+        &-text {
+          font-size: 130px !important;
+        }
+
+        &-decor {
+          width: 130px !important;
+          left: 700px !important;
+          bottom: 80px !important;
+        }
+      }
+      .banner-sub-header {
+        width: 800px !important;
+        padding: 20px !important;
+        h2 {
+          font-size: 40px !important;
+        }
+      }
+      .banner-btn-detail {
+        width: 450px !important;
+        left: 0 !important;
+        font-size: 30px !important;
+      }
+    }
+  }
+
+  .big-banner-tutor {
+    height: 50vh !important;
+
+    &-container {
+      min-width: 1600px !important;
+      .banner-header {
+        &-text {
+          font-size: 130px !important;
+        }
+
+        &-decor {
+          width: 130px !important;
+          left: 700px !important;
+          bottom: 80px !important;
+        }
+      }
+      .banner-sub-header {
+        width: 800px !important;
+        padding: 20px !important;
+        h2 {
+          font-size: 40px !important;
+        }
+      }
+      .banner-btn-detail {
+        width: 450px !important;
+        left: 0 !important;
+        font-size: 30px !important;
+      }
+    }
+  }
+
+  .sub-banner {
+    height: fit-content !important;
+    padding: 200px 0 !important;
+
+    &-container {
+      min-width: 1650px !important;
+      h4 {
+        font-size: 40px !important;
+      }
+
+      h2 {
+        font-size: 60px !important;
+      }
+
+      .card-group {
+        .card {
+          img {
+            width: 130px !important;
+            height: auto !important;
+          }
+
+          &-body {
+            .card-title {
+              font-size: 30px !important;
+            }
+
+            .card-text {
+              font-size: 25px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .our-tutors {
+    height: fit-content !important;
+    padding: 200px 0 !important;
+
+    &-container {
+      min-width: 1650px !important;
+
+      &-header {
+        h1 {
+          font-size: 60px !important;
+        }
+      }
+
+      .tutor-container {
+        height: 900px !important;
+        .tutor-card {
+          width: 500px !important;
+          height: 590px !important;
+
+          &-img {
+            width: 450px !important;
+            height: 355px !important;
+          }
+
+          &-content {
+            top: 450px !important;
+            height: 100px !important;
+
+            &-header {
+              h3 {
+                font-size: 35px !important;
+              }
+
+              .ielts-band {
+                font-size: 30px !important;
+              }
+
+              .exp-tutor {
+                font-size: 25px !important;
+              }
+            }
+
+            &-detail {
+              font-size: 25px !important;
+            }
+          }
+        }
+
+        .tutor-card:hover .tutor-card-img {
+          top: -180px !important;
+        }
+
+        .tutor-card:hover .tutor-card-content {
+          height: 100% !important;
+          top: 180px !important;
+        }
+      }
+
+      .cta-btn {
+        font-size: 30px !important;
+        padding: 50px !important;
+        border-radius: 50px !important;
+      }
+    }
+  }
+
+  .our-tutors-tutor {
+    height: fit-content !important;
+    padding: 200px 0 !important;
+
+    .tutor-carousel {
+      .carousel-item-1 {
+        .tutor-carousel__item-img {
+          padding: 0 0 0 50px !important;
+          img {
+            width: 65% !important;
+          }
+        }
+      }
+      &__item {
+        &-dt {
+          margin-left: 30px !important;
+
+          ul {
+            width: 90% !important;
+            li {
+              font-size: 30px !important;
+            }
+          }
+
+          .band {
+            width: 700px !important;
+
+            &-div {
+              width: fit-content !important;
+              padding: 35px 20px !important;
+
+              p {
+                font-size: 30px !important;
+              }
+            }
+
+            .overall {
+              margin-top: 40px !important;
+              margin-left: 50px !important;
+              p {
+                font-size: 120px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .kinder-tutors {
+      margin: 250px 200px 0 200px !important;
+
+      h2 {
+        font-size: 60px !important;
+      }
+
+      h5 {
+        font-size: 40px !important;
+      }
+
+      .tutor {
+        &-img {
+          img {
+            width: 85% !important;
+          }
+        }
+      }
+    }
+  }
+
+  .courses {
+    height: fit-content !important;
+    padding: 200px 0 !important;
+
+    &-container {
+      .content {
+        &-all {
+          h1 {
+            font-size: 60px !important;
+          }
+          h4 {
+            font-size: 40px !important;
+          }
+          .combo {
+            &-details {
+              &-header {
+                h2 {
+                  font-size: 50px !important;
+                }
+              }
+
+              &-el {
+                .course {
+                  &-el {
+                    width: 350px !important;
+                    height: 350px !important;
+
+                    h2 {
+                      font-size: 45px !important;
+                    }
+                  }
+                }
+              }
+            }
+            h5 {
+              font-size: 30px !important;
+            }
+          }
+        }
+
+        .class {
+          &-details {
+            &-el {
+              .class-bx {
+                height: 80px !important;
+
+                h3 {
+                  font-size: 35px !important;
+                }
+
+                &-hd {
+                  height: 80px !important;
+
+                  a {
+                    font-size: 35px !important;
+                  }
+                }
+              }
+            }
+          }
+          h5 {
+            font-size: 30px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .courses-tutor {
+    height: fit-content !important;
+    padding: 200px 0 !important;
+
+    .courses-container {
+      min-width: 1650px !important;
+      h1 {
+        font-size: 60px !important;
+      }
+
+      h4 {
+        font-size: 40px !important;
+      }
+
+      a {
+        height: 70px !important;
+        font-size: 30px !important;
+        margin: 80px 620px 0 620px !important;
+      }
+    }
+  }
+
+  .courses-tutor-1 {
+    height: fit-content !important;
+    padding: 200px 0 !important;
+    .courses-container {
+      min-width: 1650px !important;
+    }
+  }
+
+  .test-ielts {
+    height: fit-content !important;
+    padding: 200px 0 !important;
+
+    &-container {
+      min-width: 1650px !important;
+
+      &-1 {
+        h1 {
+          font-size: 60px !important;
+          width: 600px !important;
+        }
+
+        p {
+          font-size: 30px !important;
+        }
+
+        img {
+          width: 576px !important;
+          height: 600px !important;
+        }
+      }
+
+      &-2 {
+        img {
+          width: 562px !important;
+          height: 600px !important;
+          right: 100px !important;
+        }
+
+        p {
+          font-size: 30px !important;
+          bottom: 190px !important;
+        }
+
+        .test-link {
+          bottom: 110px !important;
+          right: -150px !important;
+          width: 528px !important;
+          padding: 30px !important;
+          font-size: 30px !important;
+
+          &-1 {
+            bottom: 35px !important;
+            right: -150px !important;
+            width: 528px !important;
+            padding: 30px !important;
+            font-size: 30px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .info-form {
+    height: 1300px !important;
+
+    &-container {
+      .kinder-form {
+        width: 700px !important;
+        height: 1140px !important;
+
+        h4 {
+          font-size: 40px !important;
+        }
+
+        p {
+          font-size: 25px !important;
+        }
+
+        .form-control {
+          font-size: 20px !important;
+        }
+
+        .form-select {
+          font-size: 20px !important;
+        }
+
+        label {
+          font-size: 22px !important;
+        }
+      }
+
+      .test-div {
+        right: 35% !important;
+        bottom: 70% !important;
+
+        .test-link {
+          width: 520px !important;
+          height: 80px !important;
+          font-size: 30px !important;
+
+          &-1 {
+            width: 520px !important;
+            height: 80px !important;
+            font-size: 30px !important;
+            bottom: 40px !important;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    height: fit-content !important;
+    padding: 150px 0 0 0 !important;
+
+    .footer-container {
+      margin-bottom: 150px !important;
+      min-width: 1650px !important;
+
+      &-1 {
+        img {
+          width: 401px !important;
+          height: auto !important;
+        }
+
+        .kinder-info {
+          h5 {
+            font-size: 40px !important;
+          }
+
+          li {
+            a {
+              font-size: 30px !important;
+            }
+            i {
+              font-size: 30px !important;
+            }
+          }
+        }
+
+        .kinder-social {
+          h5 {
+            font-size: 40px !important;
+          }
+          li {
+            a {
+              font-size: 40px !important;
+            }
+          }
+        }
+      }
+
+      &-2 {
+        .kinder-course {
+          h5 {
+            font-size: 40px !important;
+          }
+
+          ul {
+            li {
+              a {
+                font-size: 30px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .kinder-copyright {
+      height: 70px !important;
+      span {
+        font-size: 25px !important;
+      }
+    }
+  }
+}

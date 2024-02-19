@@ -24,7 +24,7 @@ $primary-section-color: #ede6d6;
 }
 
 @mixin media-sm {
-  @media screen and (min-width: 375px) and (max-width: 767px) and (orientation: portrait) {
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
     @content;
   }
 }
@@ -42,13 +42,19 @@ $primary-section-color: #ede6d6;
 }
 
 @mixin media-lg {
-  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
     @content;
   }
 }
 
 @mixin media-xl {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1440px) and (max-width: 2559px) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media screen and (min-width: 2560px) {
     @content;
   }
 }
