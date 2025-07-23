@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .custom-border {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #000;
+    -moz-box-shadow: inset 0px 0px 0px 2px #000;
+    box-shadow: inset 0px 0px 0px 2px #000;
+  }
+
+  .no-chevron {
+    appearance: none; /* Hides the chevron in most browsers */
+    -webkit-appearance: none; /* Hides the chevron in WebKit browsers (Chrome, Safari) */
+    -moz-appearance: none; /* Hides the chevron in Firefox */
+    background: none; /* Optionally remove background styling */
+  }
+
+  .no-chevron option {
+    background-color: white; /* Sets the background color of the dropdown options */
+    color: black; /* Sets text color for the options */
+  }
+}
